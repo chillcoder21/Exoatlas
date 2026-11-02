@@ -1,0 +1,73 @@
+experiment,cluster_id,discoverymethod,planet_count,percent_of_discovery_method
+with_temp,0,Astrometry,3,100
+with_temp,1,Astrometry,0,0
+with_temp,2,Astrometry,0,0
+with_temp,3,Astrometry,0,0
+with_temp,0,Eclipse Timing Variations,7,100
+with_temp,1,Eclipse Timing Variations,0,0
+with_temp,2,Eclipse Timing Variations,0,0
+with_temp,3,Eclipse Timing Variations,0,0
+with_temp,0,Imaging,16,100
+with_temp,1,Imaging,0,0
+with_temp,2,Imaging,0,0
+with_temp,3,Imaging,0,0
+with_temp,0,Microlensing,1,100
+with_temp,1,Microlensing,0,0
+with_temp,2,Microlensing,0,0
+with_temp,3,Microlensing,0,0
+with_temp,0,Orbital Brightness Modulation,0,0
+with_temp,1,Orbital Brightness Modulation,0,0
+with_temp,2,Orbital Brightness Modulation,0,0
+with_temp,3,Orbital Brightness Modulation,1,100
+with_temp,0,Pulsation Timing Variations,1,100
+with_temp,1,Pulsation Timing Variations,0,0
+with_temp,2,Pulsation Timing Variations,0,0
+with_temp,3,Pulsation Timing Variations,0,0
+with_temp,0,Radial Velocity,727,66.758494031221304
+with_temp,1,Radial Velocity,48,4.4077134986225897
+with_temp,2,Radial Velocity,242,22.222222222222221
+with_temp,3,Radial Velocity,72,6.6115702479338845
+with_temp,0,Transit,106,2.5647229615291556
+with_temp,1,Transit,1312,31.744495523832565
+with_temp,2,Transit,1970,47.665134285022987
+with_temp,3,Transit,745,18.025647229615291
+with_temp,0,Transit Timing Variations,10,45.454545454545453
+with_temp,1,Transit Timing Variations,1,4.5454545454545459
+with_temp,2,Transit Timing Variations,11,50
+with_temp,3,Transit Timing Variations,0,0
+without_temp,0,Astrometry,0,0
+without_temp,1,Astrometry,3,100
+without_temp,2,Astrometry,0,0
+without_temp,3,Astrometry,0,0
+without_temp,0,Eclipse Timing Variations,0,0
+without_temp,1,Eclipse Timing Variations,0,0
+without_temp,2,Eclipse Timing Variations,7,100
+without_temp,3,Eclipse Timing Variations,0,0
+without_temp,0,Imaging,0,0
+without_temp,1,Imaging,7,43.75
+without_temp,2,Imaging,9,56.25
+without_temp,3,Imaging,0,0
+without_temp,0,Microlensing,0,0
+without_temp,1,Microlensing,0,0
+without_temp,2,Microlensing,1,100
+without_temp,3,Microlensing,0,0
+without_temp,0,Orbital Brightness Modulation,0,0
+without_temp,1,Orbital Brightness Modulation,0,0
+without_temp,2,Orbital Brightness Modulation,0,0
+without_temp,3,Orbital Brightness Modulation,1,100
+without_temp,0,Pulsation Timing Variations,0,0
+without_temp,1,Pulsation Timing Variations,0,0
+without_temp,2,Pulsation Timing Variations,1,100
+without_temp,3,Pulsation Timing Variations,0,0
+without_temp,0,Radial Velocity,244,22.405876951331496
+without_temp,1,Radial Velocity,225,20.66115702479339
+without_temp,2,Radial Velocity,525,48.209366391184574
+without_temp,3,Radial Velocity,95,8.7235996326905418
+without_temp,0,Transit,3087,74.691507379627382
+without_temp,1,Transit,101,2.4437454633438183
+without_temp,2,Transit,96,2.3227679651584805
+without_temp,3,Transit,849,20.541979191870315
+without_temp,0,Transit Timing Variations,8,36.363636363636367
+without_temp,1,Transit Timing Variations,5,22.727272727272727
+without_temp,2,Transit Timing Variations,4,18.181818181818183
+without_temp,3,Transit Timing Variations,5,22.727272727272727

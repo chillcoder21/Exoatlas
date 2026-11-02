@@ -1,0 +1,45 @@
+discovery_method,property,property_label,unit,error_1_field,error_2_field,total_planet_records,measured_count,missing_count,zero_measurement_count,measurement_availability_pct,median,q1,q3,minimum,maximum,unique_hosts_measured,uncertainty_count,error_1_count,error_2_count,uncertainty_availability_pct,sample_size_is_small
+Transit,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,4785,4784,1,0,99.9791013584117,2.46,1.64,4.0825,0.3098,29.33,3673,4405,4405,4405,92.0777591973244,False
+Transit,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,4785,4785,0,0,100,7.970940113,3.7980908,18.7959228,0.1120067,3650,3674,4306,4306,4306,89.9895506792058,False
+Transit,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,4785,4618,167,0,96.5099268547544,831,586,1164.6825,134.4,3921,3549,1738,1738,1738,37.6353399740147,False
+Transit,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,4785,4135,650,3064,86.4158829676071,0,0,0.00621,0,0.9412,3160,835,835,835,20.1934703748489,False
+Radial Velocity,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,1204,1167,37,0,96.9269102990033,12.6,4.12,13.4,0.637,15.58051,864,32,32,32,2.74207369323051,False
+Radial Velocity,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,1204,1204,0,0,100,306.69,21.8842825,1123.4478475,0.7365474,77114.07158,878,1200,1200,1200,99.6677740863787,False
+Radial Velocity,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,1204,1159,45,0,96.2624584717608,370.79,204.33,653.9,36.57,2147.31,854,920,920,920,79.3787748058671,False
+Radial Velocity,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,1204,1159,45,82,96.2624584717608,0.15,0.07,0.3,0,0.95,850,1039,1039,1039,89.6462467644521,False
+Microlensing,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,292,292,0,0,100,12.5,5.9775,13.5,1.09,14.3,283,0,0,0,0,False
+Microlensing,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,292,12,280,0,4.10958904109589,3142.5,2412.75,4756.875,1220,14200,11,10,10,10,83.3333333333333,False
+Microlensing,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,292,7,285,0,2.3972602739726,59,52.5,105.6,34,344.63,6,3,3,3,42.8571428571429,False
+Microlensing,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,292,3,289,1,1.02739726027397,0.15,0.075,0.285,0,0.42,3,2,2,2,66.6666666666667,True
+Imaging,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,98,94,4,0,95.9183673469388,12.420995,12.2,14.389438825,10.468,87.20586985,85,36,36,36,38.2978723404255,False
+Imaging,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,98,26,72,0,26.530612244898,33100,10303.125,113775,2290,402000000,21,22,22,22,84.6153846153846,False
+Imaging,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,98,89,9,0,90.8163265306122,1200,135.17,1800,1.48,2700,79,68,68,68,76.4044943820225,False
+Imaging,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,98,28,70,1,28.5714285714286,0.4,0.185,0.5275,0,0.83,23,21,21,21,75,False
+Transit Timing Variations,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,29,28,1,0,96.551724137931,9.7,3.23,12.15,0.797,14.1,28,3,3,3,10.7142857142857,False
+Transit Timing Variations,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,29,29,0,0,100,41.2871975,30,273.69,2.1664,3990,29,26,26,26,89.6551724137931,False
+Transit Timing Variations,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,29,23,6,0,79.3103448275862,455,278,593.32,138.11,1864,23,20,20,20,86.9565217391304,False
+Transit Timing Variations,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,29,27,2,1,93.1034482758621,0.096,0.0235,0.225,0,0.651,27,25,25,25,92.5925925925926,False
+Eclipse Timing Variations,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,17,15,2,0,88.2352941176471,12.9,12.65,13.3,12,13.5,10,0,0,0,0,False
+Eclipse Timing Variations,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,17,17,0,0,100,3160,1460,4368,43,10220,11,16,16,16,94.1176470588235,False
+Eclipse Timing Variations,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,17,7,10,0,41.1764705882353,338.12,41.425,444.275,24.39,669.65,7,3,3,3,42.8571428571429,False
+Eclipse Timing Variations,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,17,16,1,4,94.1176470588235,0.1045,0.03,0.2525,0,0.51,10,12,12,12,75,False
+Orbital Brightness Modulation,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,9,6,3,0,66.6666666666667,13.4,4.00025,14,0.759,15.24424,5,1,1,1,16.6666666666667,False
+Orbital Brightness Modulation,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,9,9,0,0,100,0.81161,0.32528,1.701531,0.2197,3.294601,6,6,6,6,66.6666666666667,False
+Orbital Brightness Modulation,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,9,3,6,0,33.3333333333333,6910.74,4525.37,7344.26,2140,7777.78,2,1,1,1,33.3333333333333,True
+Orbital Brightness Modulation,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,9,1,8,1,11.1111111111111,0,0,0,0,0,1,0,0,0,0,True
+Pulsar Timing,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,8,6,2,0,75,1.855,1.365,10.4525,0.338,13.9,4,0,0,0,0,False
+Pulsar Timing,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,8,7,1,0,87.5,25.262,0.2279495125,82.37665,0.090706293,10140,5,7,7,7,100,False
+Pulsar Timing,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,8,0,8,0,0,,,,,,0,0,0,0,0,True
+Pulsar Timing,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,8,6,2,1,75,0.0225,0.005925,0.0516,0,0.236,4,3,3,3,50,False
+Astrometry,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,6,6,0,0,100,12.25,12.1,12.775,11.9,13.3,6,0,0,0,0,False
+Astrometry,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,6,6,0,0,100,334.76,291.0175,518.13,246.36,3420,6,6,6,6,100,False
+Astrometry,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,6,3,3,0,50,151.9,139.3,172.295,126.7,192.69,3,3,3,3,100,True
+Astrometry,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,6,6,0,0,100,0.49615,0.34625,0.798075,0.338,0.948,6,6,6,6,100,False
+Pulsation Timing Variations,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,2,2,0,0,100,12.75,12.575,12.925,12.4,13.1,2,0,0,0,0,True
+Pulsation Timing Variations,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,2,2,0,0,100,1005,922.5,1087.5,840,1170,2,2,2,2,100,True
+Pulsation Timing Variations,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,2,1,1,0,50,519.69,519.69,519.69,519.69,519.69,1,1,1,1,100,True
+Pulsation Timing Variations,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,2,2,0,1,100,0.075,0.0375,0.1125,0,0.15,2,1,1,1,50,True
+Disk Kinematics,pl_rade,Planet radius,Earth radii,pl_radeerr1,pl_radeerr2,1,1,0,0,100,13.3,13.3,13.3,13.3,13.3,1,0,0,0,0,True
+Disk Kinematics,pl_orbper,Orbital period,days,pl_orbpererr1,pl_orbpererr2,1,0,1,0,0,,,,,,0,0,0,0,0,True
+Disk Kinematics,pl_eqt,Equilibrium temperature,K,pl_eqterr1,pl_eqterr2,1,1,0,0,100,63.44,63.44,63.44,63.44,63.44,1,0,0,0,0,True
+Disk Kinematics,pl_orbeccen,Orbital eccentricity,dimensionless,pl_orbeccenerr1,pl_orbeccenerr2,1,0,1,0,0,,,,,,0,0,0,0,0,True

@@ -1,0 +1,896 @@
+{
+  "dataset": {
+    "columns": 84,
+    "name": "PSCompPars_2026.10.30_13.47.46.csv",
+    "nasa_comment_metadata_skipped": true,
+    "records": 6451,
+    "snapshot_date": "2026-10-30",
+    "source_hash_matches_approved_snapshot": true,
+    "source_path": "data/raw/PSCompPars_2026.10.30_13.47.46.csv",
+    "source_sha256_after": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30",
+    "source_sha256_before": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30",
+    "source_sha256_expected": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30",
+    "source_unchanged_during_run": true
+  },
+  "decisions": {
+    "eccentricity_zeros": "Preserved as valid raw zero values.",
+    "extreme_values": "No automatic deletion or winsorization.",
+    "missing_data": "No imputation. The primary clustering cohort requires all four finite features and positive radius and period for log10.",
+    "model_training": "No clustering or supervised model was trained.",
+    "standardization": "StandardScaler fitted independently to each experiment's feature columns."
+  },
+  "eligibility": {
+    "all_four_fields_finite_numeric": 5273,
+    "all_four_fields_present": 5273,
+    "eligible_four_feature_records": 5273,
+    "eligible_without_temperature_sensitivity_records": 5335,
+    "four_feature_partition_sums_to_source_records": true,
+    "four_feature_stepwise_partition": {
+      "eligible_all_four_features": 5273,
+      "missing_one_or_more_features": 1178,
+      "nonfinite_value_after_numeric_check": 0,
+      "nonnumeric_value_after_complete_case_check": 0,
+      "nonpositive_orbital_period_after_radius_check": 0,
+      "nonpositive_radius_after_finite_check": 0
+    },
+    "master_eligibility_columns": [
+      "eligible_four_feature_clustering",
+      "four_feature_eligibility_reason",
+      "eligible_without_temperature_sensitivity"
+    ],
+    "primary_cohort_policy": "Complete-case four-feature eligibility; no imputation.",
+    "primary_excluded_records_remain_in_master": true,
+    "review_only_domain_flags": {
+      "eccentricity_at_least_one": 0,
+      "eccentricity_zero_all_source_records": 3156,
+      "eccentricity_zero_primary_cohort": 3144,
+      "negative_eccentricity": 0,
+      "nonpositive_equilibrium_temperature": 0
+    },
+    "source_columns": 84,
+    "source_records": 6451,
+    "without_temperature_fields_finite_numeric": 5335,
+    "without_temperature_fields_present": 5335
+  },
+  "experiments": {
+    "identical_planet_ids_and_order": true,
+    "sensitivity_dataset_written": false,
+    "sensitivity_only_eligible_without_temperature_records": 5335,
+    "with_temperature": {
+      "cohort": "The shared 5,273-record complete-case cohort.",
+      "output_path": "data/processed/clustering_features_with_temp.csv",
+      "raw_physical_columns_preserved": [
+        "pl_rade",
+        "pl_orbper",
+        "pl_eqt",
+        "pl_orbeccen"
+      ],
+      "records": 5273,
+      "role": "Primary experiment A",
+      "scaler": {
+        "class": "sklearn.preprocessing.StandardScaler",
+        "feature_order": [
+          "log10_pl_rade",
+          "log10_pl_orbper",
+          "pl_eqt",
+          "pl_orbeccen"
+        ],
+        "fit_records": 5273,
+        "mean": [
+          0.5757294915210049,
+          1.2773755498624801,
+          829.6804437701499,
+          0.07698519343827044
+        ],
+        "scale": [
+          0.40411154555195017,
+          0.9044370773030528,
+          474.926102058312,
+          0.1507287149116468
+        ],
+        "standard_deviation_convention": "population (ddof=0), as used by StandardScaler",
+        "variance": [
+          0.1633061412483859,
+          0.8180064268004882,
+          225554.80241630218,
+          0.022719145498916498
+        ]
+      },
+      "scaler_path": "artifacts/preprocessing/scaler_with_temp.joblib",
+      "standardized_feature_columns": [
+        "scaled_log10_pl_rade",
+        "scaled_log10_pl_orbper",
+        "scaled_pl_eqt",
+        "scaled_pl_orbeccen"
+      ],
+      "transformations": {
+        "pl_eqt": "raw value in kelvin",
+        "pl_orbeccen": "raw value; zeros preserved",
+        "pl_orbper": "log10(pl_orbper)",
+        "pl_rade": "log10(pl_rade)"
+      },
+      "transformed_feature_columns": [
+        "log10_pl_rade",
+        "log10_pl_orbper",
+        "pl_eqt",
+        "pl_orbeccen"
+      ]
+    },
+    "without_temperature": {
+      "cohort": "The shared 5,273-record complete-case cohort.",
+      "output_path": "data/processed/clustering_features_without_temp.csv",
+      "pl_eqt_column_note": "Retained as a raw physical measurement; not a feature in experiment B.",
+      "raw_physical_columns_preserved": [
+        "pl_rade",
+        "pl_orbper",
+        "pl_eqt",
+        "pl_orbeccen"
+      ],
+      "records": 5273,
+      "role": "Primary experiment B; same cohort as experiment A.",
+      "scaler": {
+        "class": "sklearn.preprocessing.StandardScaler",
+        "feature_order": [
+          "log10_pl_rade",
+          "log10_pl_orbper",
+          "pl_orbeccen"
+        ],
+        "fit_records": 5273,
+        "mean": [
+          0.5757294915210049,
+          1.2773755498624801,
+          0.07698519343827044
+        ],
+        "scale": [
+          0.40411154555195017,
+          0.9044370773030528,
+          0.1507287149116468
+        ],
+        "standard_deviation_convention": "population (ddof=0), as used by StandardScaler",
+        "variance": [
+          0.1633061412483859,
+          0.8180064268004882,
+          0.022719145498916498
+        ]
+      },
+      "scaler_path": "artifacts/preprocessing/scaler_without_temp.joblib",
+      "standardized_feature_columns": [
+        "scaled_log10_pl_rade",
+        "scaled_log10_pl_orbper",
+        "scaled_pl_orbeccen"
+      ],
+      "transformations": {
+        "pl_orbeccen": "raw value; zeros preserved",
+        "pl_orbper": "log10(pl_orbper)",
+        "pl_rade": "log10(pl_rade)"
+      },
+      "transformed_feature_columns": [
+        "log10_pl_rade",
+        "log10_pl_orbper",
+        "pl_orbeccen"
+      ]
+    }
+  },
+  "extreme_value_investigation": {
+    "interpretation": "IQR thresholds identify statistical review flags only. They do not establish that a measurement is wrong. All listed records and original values are retained.",
+    "records_by_feature": {
+      "pl_eqt": {
+        "above_upper_fence_count": 132,
+        "below_lower_fence_count": 0,
+        "highest_records": [
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_eqt",
+            "hostname": "KOI-55",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 7777.78,
+              "pl_orbeccen": null,
+              "pl_orbper": 0.240104,
+              "pl_rade": 0.759
+            },
+            "pl_name": "KOI-55 b",
+            "source_data_record_number": 2158,
+            "value": 7777.78
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_eqt",
+            "hostname": "KOI-55",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 6910.74,
+              "pl_orbeccen": null,
+              "pl_orbper": 0.342887,
+              "pl_rade": 0.867
+            },
+            "pl_name": "KOI-55 c",
+            "source_data_record_number": 2159,
+            "value": 6910.74
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_eqt",
+            "hostname": "KELT-9",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 3921.0,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 1.4811235,
+              "pl_rade": 21.70058664
+            },
+            "pl_name": "KELT-9 b",
+            "source_data_record_number": 1971,
+            "value": 3921.0
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_eqt",
+            "hostname": "TOI-2109",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 3646.0,
+              "pl_orbeccen": null,
+              "pl_orbper": 0.67247414,
+              "pl_rade": 15.098497
+            },
+            "pl_name": "TOI-2109 b",
+            "source_data_record_number": 5556,
+            "value": 3646.0
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_eqt",
+            "hostname": "WASP-189",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 3353.0,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 2.724033,
+              "pl_rade": 18.14733975
+            },
+            "pl_name": "WASP-189 b",
+            "source_data_record_number": 6276,
+            "value": 3353.0
+          }
+        ],
+        "iqr": 608.815,
+        "lower_fence": -427.0375000000001,
+        "lowest_records": [
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_eqt",
+            "hostname": "GJ 900 A",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 1.48,
+              "pl_orbeccen": null,
+              "pl_orbper": null,
+              "pl_rade": 12.4
+            },
+            "pl_name": "GJ 900 b",
+            "source_data_record_number": 352,
+            "value": 1.48
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_eqt",
+            "hostname": "UCAC3 113-933",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 1.79,
+              "pl_orbeccen": null,
+              "pl_orbper": null,
+              "pl_rade": 12.1
+            },
+            "pl_name": "UCAC3 113-933 b",
+            "source_data_record_number": 6170,
+            "value": 1.79
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_eqt",
+            "hostname": "USco CTIO 108",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 2.96,
+              "pl_orbeccen": null,
+              "pl_orbper": null,
+              "pl_rade": 12.3
+            },
+            "pl_name": "USco CTIO 108 b",
+            "source_data_record_number": 6173,
+            "value": 2.96
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_eqt",
+            "hostname": "Ross 458",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 4.32,
+              "pl_orbeccen": null,
+              "pl_orbper": null,
+              "pl_rade": 14.01125
+            },
+            "pl_name": "Ross 458 c",
+            "source_data_record_number": 5206,
+            "value": 4.32
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_eqt",
+            "hostname": "2MASS J02192210-3925225",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 6.27,
+              "pl_orbeccen": null,
+              "pl_orbper": null,
+              "pl_rade": 16.14096
+            },
+            "pl_name": "2MASS J02192210-3925225 b",
+            "source_data_record_number": 15,
+            "value": 6.27
+          }
+        ],
+        "q1": 486.185,
+        "q3": 1095.0,
+        "rule": "Review flag if below Q1 - 1.5*IQR or above Q3 + 1.5*IQR; no rows removed.",
+        "unit": "K",
+        "upper_fence": 2008.2225
+      },
+      "pl_orbeccen": {
+        "above_upper_fence_count": 671,
+        "below_lower_fence_count": 0,
+        "highest_records": [
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "HD 20782",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 253.34,
+              "pl_orbeccen": 0.95,
+              "pl_orbper": 597.0643,
+              "pl_rade": 13.6
+            },
+            "pl_name": "HD 20782 b",
+            "source_data_record_number": 940,
+            "value": 0.95
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "HD 28254",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 212.28,
+              "pl_orbeccen": 0.95,
+              "pl_orbper": 1333.0,
+              "pl_rade": 13.0
+            },
+            "pl_name": "HD 28254 b",
+            "source_data_record_number": 1070,
+            "value": 0.95
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "HIP 66074",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 192.69,
+              "pl_orbeccen": 0.948,
+              "pl_orbper": 310.9,
+              "pl_rade": 12.9
+            },
+            "pl_name": "HIP 66074 b",
+            "source_data_record_number": 1414,
+            "value": 0.948
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "TIC 241249530",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 438.94,
+              "pl_orbeccen": 0.9412,
+              "pl_orbper": 165.7719,
+              "pl_rade": 13.29385111
+            },
+            "pl_name": "TIC 241249530 b",
+            "source_data_record_number": 5236,
+            "value": 0.9412
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "HD 80606",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 405.0,
+              "pl_orbeccen": 0.93183,
+              "pl_orbper": 111.436765,
+              "pl_rade": 11.56766808
+            },
+            "pl_name": "HD 80606 b",
+            "source_data_record_number": 1276,
+            "value": 0.93183
+          }
+        ],
+        "iqr": 0.09,
+        "lower_fence": -0.135,
+        "lowest_records": [
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "14 And",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 909.92,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 186.76,
+              "pl_rade": 13.1
+            },
+            "pl_name": "14 And b",
+            "source_data_record_number": 3,
+            "value": 0.0
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "55 Cnc B",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 395.41,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 6.7994,
+              "pl_rade": 1.69
+            },
+            "pl_name": "55 Cnc B b",
+            "source_data_record_number": 32,
+            "value": 0.0
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "55 Cnc B",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 230.04,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 33.747,
+              "pl_rade": 2.16
+            },
+            "pl_name": "55 Cnc B c",
+            "source_data_record_number": 33,
+            "value": 0.0
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "BD+20 594",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 546.0,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 41.6855,
+              "pl_rade": 2.57807
+            },
+            "pl_name": "BD+20 594 b",
+            "source_data_record_number": 67,
+            "value": 0.0
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_orbeccen",
+            "hostname": "BD-06 1339",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 834.97,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 3.8728,
+              "pl_rade": null
+            },
+            "pl_name": "BD-06 1339 b",
+            "source_data_record_number": 77,
+            "value": 0.0
+          }
+        ],
+        "q1": 0.0,
+        "q3": 0.09,
+        "rule": "Review flag if below Q1 - 1.5*IQR or above Q3 + 1.5*IQR; no rows removed.",
+        "unit": "dimensionless",
+        "upper_fence": 0.225
+      },
+      "pl_orbper": {
+        "above_upper_fence_count": 1057,
+        "below_lower_fence_count": 0,
+        "highest_records": [
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_orbper",
+            "hostname": "COCONUTS-2 A",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 493.0,
+              "pl_orbeccen": null,
+              "pl_orbper": 402000000.0,
+              "pl_rade": 12.57647635
+            },
+            "pl_name": "COCONUTS-2 b",
+            "source_data_record_number": 101,
+            "value": 402000000.0
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_orbper",
+            "hostname": "CFHTWIR-Oph 98 A",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 1800.0,
+              "pl_orbeccen": null,
+              "pl_orbper": 8040000.0,
+              "pl_rade": 20.8487041
+            },
+            "pl_name": "CFHTWIR-Oph 98 b",
+            "source_data_record_number": 98,
+            "value": 8040000.0
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_orbper",
+            "hostname": "Oph 11",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 2175.0,
+              "pl_orbeccen": null,
+              "pl_orbper": 7300000.0,
+              "pl_rade": 12.3
+            },
+            "pl_name": "Oph 11 b",
+            "source_data_record_number": 5172,
+            "value": 7300000.0
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbper",
+            "hostname": "VHS J125601.92-125723.9",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 1194.0,
+              "pl_orbeccen": 0.68,
+              "pl_orbper": 5800000.0,
+              "pl_rade": 13.67495645
+            },
+            "pl_name": "VHS J125601.92-125723.9 b",
+            "source_data_record_number": 6185,
+            "value": 5800000.0
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_orbper",
+            "hostname": "b Cen A",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": null,
+              "pl_orbeccen": 0.4,
+              "pl_orbper": 1790000.0,
+              "pl_rade": 12.4
+            },
+            "pl_name": "b Cen AB b",
+            "source_data_record_number": 6409,
+            "value": 1790000.0
+          }
+        ],
+        "iqr": 33.7050945,
+        "lower_fence": -46.26946325,
+        "lowest_records": [
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_orbper",
+            "hostname": "PSR J1719-1438",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": null,
+              "pl_orbeccen": 0.06,
+              "pl_orbper": 0.090706293,
+              "pl_rade": null
+            },
+            "pl_name": "PSR J1719-1438 b",
+            "source_data_record_number": 5183,
+            "value": 0.090706293
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_orbper",
+            "hostname": "ZTF J1828+2308",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": null,
+              "pl_orbeccen": null,
+              "pl_orbper": 0.1120067,
+              "pl_rade": 11.13051784
+            },
+            "pl_name": "ZTF J1828+2308 b",
+            "source_data_record_number": 6406,
+            "value": 0.1120067
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_orbper",
+            "hostname": "M62H",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": null,
+              "pl_orbeccen": null,
+              "pl_orbper": 0.132935028,
+              "pl_rade": null
+            },
+            "pl_name": "M62H b",
+            "source_data_record_number": 4971,
+            "value": 0.132935028
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_orbper",
+            "hostname": "Kepler-974",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 1654.0,
+              "pl_orbeccen": null,
+              "pl_orbper": 0.1768913,
+              "pl_rade": 0.61
+            },
+            "pl_name": "KOI-1843.03",
+            "source_data_record_number": 2141,
+            "value": 0.1768913
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_orbper",
+            "hostname": "K2-137",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 1471.0,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 0.179719,
+              "pl_rade": 0.64
+            },
+            "pl_name": "K2-137 b",
+            "source_data_record_number": 1505,
+            "value": 0.179719
+          }
+        ],
+        "q1": 4.2881785,
+        "q3": 37.993273,
+        "rule": "Review flag if below Q1 - 1.5*IQR or above Q3 + 1.5*IQR; no rows removed.",
+        "unit": "days",
+        "upper_fence": 88.55091475
+      },
+      "pl_rade": {
+        "above_upper_fence_count": 5,
+        "below_lower_fence_count": 0,
+        "highest_records": [
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_rade",
+            "hostname": "V2376 Ori",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 2100.0,
+              "pl_orbeccen": null,
+              "pl_orbper": null,
+              "pl_rade": 87.20586985
+            },
+            "pl_name": "V2376 Ori b",
+            "source_data_record_number": 6183,
+            "value": 87.20586985
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_rade",
+            "hostname": "HD 100546",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 94.67,
+              "pl_orbeccen": null,
+              "pl_orbper": null,
+              "pl_rade": 77.3421
+            },
+            "pl_name": "HD 100546 b",
+            "source_data_record_number": 528,
+            "value": 77.3421
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_rade",
+            "hostname": "GQ Lup",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 2650.0,
+              "pl_orbeccen": null,
+              "pl_orbper": null,
+              "pl_rade": 33.6
+            },
+            "pl_name": "GQ Lup b",
+            "source_data_record_number": 363,
+            "value": 33.6
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_rade",
+            "hostname": "DH Tau",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 2200.0,
+              "pl_orbeccen": null,
+              "pl_orbper": null,
+              "pl_rade": 30.2643
+            },
+            "pl_name": "DH Tau b",
+            "source_data_record_number": 143,
+            "value": 30.2643
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_rade",
+            "hostname": "Kepler-1979",
+            "iqr_flagged": true,
+            "original_physical_measurements": {
+              "pl_eqt": 683.0,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 18.5084526,
+              "pl_rade": 29.33
+            },
+            "pl_name": "Kepler-1979 b",
+            "source_data_record_number": 3497,
+            "value": 29.33
+          }
+        ],
+        "iqr": 10.05,
+        "lower_fence": -13.225000000000001,
+        "lowest_records": [
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_rade",
+            "hostname": "Kepler-37",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 718.0,
+              "pl_orbeccen": 0.098,
+              "pl_orbper": 13.36702,
+              "pl_rade": 0.3098
+            },
+            "pl_name": "Kepler-37 b",
+            "source_data_record_number": 4025,
+            "value": 0.3098
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_rade",
+            "hostname": "PSR B1257+12",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": null,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 25.262,
+              "pl_rade": 0.338
+            },
+            "pl_name": "PSR B1257+12 b",
+            "source_data_record_number": 5179,
+            "value": 0.338
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_rade",
+            "hostname": "Kepler-37",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 401.0,
+              "pl_orbeccen": 0.0,
+              "pl_orbper": 51.196,
+              "pl_rade": 0.37
+            },
+            "pl_name": "Kepler-37 e",
+            "source_data_record_number": 4028,
+            "value": 0.37
+          },
+          {
+            "eligible_four_feature_clustering": false,
+            "flagged_feature": "pl_rade",
+            "hostname": "Kepler-879",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": null,
+              "pl_orbeccen": null,
+              "pl_orbper": 0.646716,
+              "pl_rade": 0.4
+            },
+            "pl_name": "Kepler-879 c",
+            "source_data_record_number": 4778,
+            "value": 0.4
+          },
+          {
+            "eligible_four_feature_clustering": true,
+            "flagged_feature": "pl_rade",
+            "hostname": "Kepler-444",
+            "iqr_flagged": false,
+            "original_physical_measurements": {
+              "pl_eqt": 938.0,
+              "pl_orbeccen": 0.16,
+              "pl_orbper": 3.6001053,
+              "pl_rade": 0.403
+            },
+            "pl_name": "Kepler-444 b",
+            "source_data_record_number": 4176,
+            "value": 0.403
+          }
+        ],
+        "q1": 1.85,
+        "q3": 11.9,
+        "rule": "Review flag if below Q1 - 1.5*IQR or above Q3 + 1.5*IQR; no rows removed.",
+        "unit": "Earth radii",
+        "upper_fence": 26.975
+      }
+    },
+    "unresolved_concerns": [
+      "The very large orbital periods, including COCONUTS-2 b, need source-level scientific review before downstream interpretation.",
+      "High IQR flags for radius, equilibrium temperature, and eccentricity are retained; this report does not establish whether any measurement is physically correct.",
+      "StandardScaler uses the full primary cohort and can be influenced by extreme values; the approved policy retains them pending review."
+    ]
+  },
+  "feature_quality": {
+    "eccentricity_zero_count_in_primary_cohort": 3144,
+    "extreme_values_removed": false,
+    "physical_measurements_overwritten": false,
+    "raw_feature_missing_counts": {
+      "pl_eqt": 540,
+      "pl_orbeccen": 1068,
+      "pl_orbper": 354,
+      "pl_rade": 50
+    },
+    "raw_feature_missing_percent": {
+      "pl_eqt": 8.370795,
+      "pl_orbeccen": 16.555573,
+      "pl_orbper": 5.487521,
+      "pl_rade": 0.775074
+    },
+    "raw_non_finite_counts": {
+      "pl_eqt": 0,
+      "pl_orbeccen": 0,
+      "pl_orbper": 0,
+      "pl_rade": 0
+    },
+    "raw_zero_counts": {
+      "pl_eqt": 0,
+      "pl_orbeccen": 3156,
+      "pl_orbper": 0,
+      "pl_rade": 0
+    }
+  },
+  "outputs": {
+    "feature_matrix_rows": {
+      "data/processed/clustering_features_with_temp.csv": 5273,
+      "data/processed/clustering_features_without_temp.csv": 5273
+    },
+    "master_path": "data/processed/planets_master.csv",
+    "master_preserves_all_source_columns": true,
+    "master_records": 6451,
+    "sha256": {
+      "artifacts/preprocessing/scaler_with_temp.joblib": "4be14920e66dedcad396b72e95d405cf4385689dbebc6a3a44008c064119ec91",
+      "artifacts/preprocessing/scaler_without_temp.joblib": "400820c145661fa1926bebe59db29a637af08c504c5ebbad7d25174471dc83f7",
+      "data/processed/clustering_features_with_temp.csv": "2912708c2573246f89d2868774d1f6e67cdca8a1efcfd5e8bc11155778d864ae",
+      "data/processed/clustering_features_without_temp.csv": "15e234fe4a2942a5d334ed6e39b371699cf95fbc532897c1bc6661cac0b05370",
+      "data/processed/planets_master.csv": "f08862e7e4396026efd49cbf477da87ae94511296074cbb660aca58dcea91918"
+    }
+  },
+  "runtime": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "python": "3.12.7",
+    "scikit_learn": "1.9.1"
+  }
+}

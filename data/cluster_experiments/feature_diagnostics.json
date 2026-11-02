@@ -1,0 +1,1078 @@
+{
+  "cluster_size_diagnostics_by_experiment_and_k": {
+    "with_temp_k2": {
+      "cluster_sizes": {
+        "0": 4269,
+        "1": 1004
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 4.25199203187251,
+      "maximum_size": 4269,
+      "mean_size": 2636.5,
+      "minimum_size": 1004
+    },
+    "with_temp_k3": {
+      "cluster_sizes": {
+        "0": 3287,
+        "1": 953,
+        "2": 1033
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 3.449108079748164,
+      "maximum_size": 3287,
+      "mean_size": 1757.6666666666667,
+      "minimum_size": 953
+    },
+    "with_temp_k4": {
+      "cluster_sizes": {
+        "0": 871,
+        "1": 1361,
+        "2": 2223,
+        "3": 818
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 2.71760391198044,
+      "maximum_size": 2223,
+      "mean_size": 1318.25,
+      "minimum_size": 818
+    },
+    "with_temp_k5": {
+      "cluster_sizes": {
+        "0": 811,
+        "1": 2270,
+        "2": 322,
+        "3": 1200,
+        "4": 670
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 7.049689440993789,
+      "maximum_size": 2270,
+      "mean_size": 1054.6,
+      "minimum_size": 322
+    },
+    "with_temp_k6": {
+      "cluster_sizes": {
+        "0": 764,
+        "1": 286,
+        "2": 638,
+        "3": 1187,
+        "4": 2159,
+        "5": 239
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 9.03347280334728,
+      "maximum_size": 2159,
+      "mean_size": 878.8333333333334,
+      "minimum_size": 239
+    },
+    "with_temp_k7": {
+      "cluster_sizes": {
+        "0": 1342,
+        "1": 511,
+        "2": 1563,
+        "3": 605,
+        "4": 220,
+        "5": 754,
+        "6": 278
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 7.1045454545454545,
+      "maximum_size": 1563,
+      "mean_size": 753.2857142857143,
+      "minimum_size": 220
+    },
+    "with_temp_k8": {
+      "cluster_sizes": {
+        "0": 1495,
+        "1": 1276,
+        "2": 510,
+        "3": 258,
+        "4": 492,
+        "5": 453,
+        "6": 578,
+        "7": 211
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 7.085308056872038,
+      "maximum_size": 1495,
+      "mean_size": 659.125,
+      "minimum_size": 211
+    },
+    "without_temp_k2": {
+      "cluster_sizes": {
+        "0": 994,
+        "1": 4279
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 4.304828973843058,
+      "maximum_size": 4279,
+      "mean_size": 2636.5,
+      "minimum_size": 994
+    },
+    "without_temp_k3": {
+      "cluster_sizes": {
+        "0": 3354,
+        "1": 849,
+        "2": 1070
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 3.950530035335689,
+      "maximum_size": 3354,
+      "mean_size": 1757.6666666666667,
+      "minimum_size": 849
+    },
+    "without_temp_k4": {
+      "cluster_sizes": {
+        "0": 3339,
+        "1": 341,
+        "2": 643,
+        "3": 950
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 9.791788856304985,
+      "maximum_size": 3339,
+      "mean_size": 1318.25,
+      "minimum_size": 341
+    },
+    "without_temp_k5": {
+      "cluster_sizes": {
+        "0": 1860,
+        "1": 609,
+        "2": 912,
+        "3": 1564,
+        "4": 328
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 5.670731707317073,
+      "maximum_size": 1860,
+      "mean_size": 1054.6,
+      "minimum_size": 328
+    },
+    "without_temp_k6": {
+      "cluster_sizes": {
+        "0": 1522,
+        "1": 589,
+        "2": 1787,
+        "3": 854,
+        "4": 300,
+        "5": 221
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 8.085972850678733,
+      "maximum_size": 1787,
+      "mean_size": 878.8333333333334,
+      "minimum_size": 221
+    },
+    "without_temp_k7": {
+      "cluster_sizes": {
+        "0": 296,
+        "1": 569,
+        "2": 1541,
+        "3": 823,
+        "4": 221,
+        "5": 811,
+        "6": 1012
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 6.972850678733032,
+      "maximum_size": 1541,
+      "mean_size": 753.2857142857143,
+      "minimum_size": 221
+    },
+    "without_temp_k8": {
+      "cluster_sizes": {
+        "0": 1510,
+        "1": 235,
+        "2": 821,
+        "3": 457,
+        "4": 128,
+        "5": 1008,
+        "6": 829,
+        "7": 285
+      },
+      "clusters_below_one_percent": [],
+      "empty_cluster_ids": [],
+      "max_min_ratio": 11.796875,
+      "maximum_size": 1510,
+      "mean_size": 659.125,
+      "minimum_size": 128
+    }
+  },
+  "experiments": {
+    "with_temp": {
+      "extreme_value_interpretation": "Largest absolute standardized observations are diagnostic review leads. Their assignment does not establish that the corresponding measurement is invalid or that it caused a cluster boundary.",
+      "feature_columns_passed_to_kmeans": [
+        "scaled_log10_pl_rade",
+        "scaled_log10_pl_orbper",
+        "scaled_pl_eqt",
+        "scaled_pl_orbeccen"
+      ],
+      "feature_distributions_on_standardized_inputs": {
+        "scaled_log10_pl_orbper": {
+          "correlation_method": "Pearson correlation of the standardized K-means input columns",
+          "maximum": 6.065709358200301,
+          "mean": 0.0,
+          "median": -0.23548807145148368,
+          "minimum": -2.236508881840728,
+          "q1": -0.703301393455494,
+          "q3": 0.3925560640102199,
+          "records": 5273,
+          "standard_deviation_sample": 1.0000948361707285,
+          "zero_count": 0
+        },
+        "scaled_log10_pl_rade": {
+          "correlation_method": "Pearson correlation of the standardized K-means input columns",
+          "maximum": 2.2062783933623855,
+          "mean": 4.3120363254927377e-17,
+          "median": -0.3029142641959752,
+          "minimum": -2.6840314018159663,
+          "q1": -0.7870374409061117,
+          "q3": 1.2115847512719222,
+          "records": 5273,
+          "standard_deviation_sample": 1.0000948361707287,
+          "zero_count": 0
+        },
+        "scaled_pl_eqt": {
+          "correlation_method": "Pearson correlation of the standardized K-means input columns",
+          "maximum": 6.509053814545435,
+          "mean": -5.390045406865922e-17,
+          "median": -0.15724645044036872,
+          "minimum": -1.6956120968716,
+          "q1": -0.7383894931239069,
+          "q3": 0.5649711714453327,
+          "records": 5273,
+          "standard_deviation_sample": 1.0000948361707287,
+          "zero_count": 0
+        },
+        "scaled_pl_orbeccen": {
+          "correlation_method": "Pearson correlation of the standardized K-means input columns",
+          "maximum": 5.791960789113526,
+          "mean": 0.0,
+          "median": -0.5107533324582322,
+          "minimum": -0.5107533324582322,
+          "q1": -0.5107533324582322,
+          "q3": 0.07971146419427988,
+          "records": 5273,
+          "standard_deviation_sample": 1.0000948361707287,
+          "zero_count": 0
+        }
+      },
+      "label": "Experiment A - four features including temperature",
+      "largest_absolute_standardized_observations_by_feature": {
+        "scaled_log10_pl_orbper": [
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 2,
+              "6": 5,
+              "7": 4,
+              "8": 7
+            },
+            "hostname": "VHS J125601.92-125723.9",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 5800000.0,
+            "pl_name": "VHS J125601.92-125723.9 b",
+            "source_data_record_number": 6185,
+            "standardized_feature_value": 6.065709358200301,
+            "transformed_feature_column": "log10_pl_orbper"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 4,
+              "6": 2,
+              "7": 3,
+              "8": 6
+            },
+            "hostname": "HD 143811 A",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 117000.0,
+            "pl_name": "HD 143811 AB b",
+            "source_data_record_number": 721,
+            "standardized_feature_value": 4.191347753220738,
+            "transformed_feature_column": "log10_pl_orbper"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 4,
+              "6": 2,
+              "7": 3,
+              "8": 6
+            },
+            "hostname": "HD 105618",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 77114.07158,
+            "pl_name": "HD 105618 c",
+            "source_data_record_number": 558,
+            "standardized_feature_value": 3.991165527112553,
+            "transformed_feature_column": "log10_pl_orbper"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 2,
+              "6": 5,
+              "7": 4,
+              "8": 7
+            },
+            "hostname": "HD 62364",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 74839.94555,
+            "pl_name": "HD 62364 c",
+            "source_data_record_number": 1207,
+            "standardized_feature_value": 3.9767917561702664,
+            "transformed_feature_column": "log10_pl_orbper"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 2,
+              "6": 5,
+              "7": 4,
+              "8": 7
+            },
+            "hostname": "HR 8799",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 69000.0,
+            "pl_name": "HR 8799 c",
+            "source_data_record_number": 1455,
+            "standardized_feature_value": 3.937779233348945,
+            "transformed_feature_column": "log10_pl_orbper"
+          }
+        ],
+        "scaled_log10_pl_rade": [
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 0,
+              "4": 1,
+              "5": 3,
+              "6": 3,
+              "7": 2,
+              "8": 0
+            },
+            "hostname": "Kepler-37",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 0.3098,
+            "pl_name": "Kepler-37 b",
+            "source_data_record_number": 4025,
+            "standardized_feature_value": -2.6840314018159663,
+            "transformed_feature_column": "log10_pl_rade"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 0,
+              "4": 2,
+              "5": 1,
+              "6": 4,
+              "7": 2,
+              "8": 1
+            },
+            "hostname": "Kepler-37",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 0.37,
+            "pl_name": "Kepler-37 e",
+            "source_data_record_number": 4028,
+            "standardized_feature_value": -2.4931922350248423,
+            "transformed_feature_column": "log10_pl_rade"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 0,
+              "4": 1,
+              "5": 3,
+              "6": 3,
+              "7": 2,
+              "8": 0
+            },
+            "hostname": "Kepler-444",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 0.403,
+            "pl_name": "Kepler-444 b",
+            "source_data_record_number": 4176,
+            "standardized_feature_value": -2.4013776791614667,
+            "transformed_feature_column": "log10_pl_rade"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 0,
+              "4": 1,
+              "5": 3,
+              "6": 3,
+              "7": 2,
+              "8": 0
+            },
+            "hostname": "Kepler-102",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 0.46,
+            "pl_name": "Kepler-102 b",
+            "source_data_record_number": 2205,
+            "standardized_feature_value": -2.2592070676735085,
+            "transformed_feature_column": "log10_pl_rade"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 2,
+              "4": 3,
+              "5": 0,
+              "6": 0,
+              "7": 5,
+              "8": 5
+            },
+            "hostname": "Kepler-1979",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 29.33,
+            "pl_name": "Kepler-1979 b",
+            "source_data_record_number": 3497,
+            "standardized_feature_value": 2.2062783933623855,
+            "transformed_feature_column": "log10_pl_rade"
+          }
+        ],
+        "scaled_pl_eqt": [
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 2,
+              "4": 3,
+              "5": 0,
+              "6": 0,
+              "7": 5,
+              "8": 4
+            },
+            "hostname": "KELT-9",
+            "original_physical_feature": "pl_eqt",
+            "original_physical_value": 3921.0,
+            "pl_name": "KELT-9 b",
+            "source_data_record_number": 1971,
+            "standardized_feature_value": 6.509053814545435,
+            "transformed_feature_column": "pl_eqt"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 2,
+              "4": 3,
+              "5": 0,
+              "6": 0,
+              "7": 5,
+              "8": 4
+            },
+            "hostname": "WASP-189",
+            "original_physical_feature": "pl_eqt",
+            "original_physical_value": 3353.0,
+            "pl_name": "WASP-189 b",
+            "source_data_record_number": 6276,
+            "standardized_feature_value": 5.3130782774285885,
+            "transformed_feature_column": "pl_eqt"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 2,
+              "4": 1,
+              "5": 3,
+              "6": 3,
+              "7": 1,
+              "8": 2
+            },
+            "hostname": "Kepler-1547",
+            "original_physical_feature": "pl_eqt",
+            "original_physical_value": 3186.0,
+            "pl_name": "Kepler-1547 b",
+            "source_data_record_number": 2937,
+            "standardized_feature_value": 4.96144462479036,
+            "transformed_feature_column": "pl_eqt"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 2,
+              "4": 3,
+              "5": 0,
+              "6": 0,
+              "7": 5,
+              "8": 4
+            },
+            "hostname": "WASP-33",
+            "original_physical_feature": "pl_eqt",
+            "original_physical_value": 2781.7,
+            "pl_name": "WASP-33 b",
+            "source_data_record_number": 6297,
+            "standardized_feature_value": 4.110154290888351,
+            "transformed_feature_column": "pl_eqt"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 2,
+              "4": 1,
+              "5": 3,
+              "6": 3,
+              "7": 1,
+              "8": 2
+            },
+            "hostname": "Kepler-770",
+            "original_physical_feature": "pl_eqt",
+            "original_physical_value": 2740.0,
+            "pl_name": "Kepler-770 c",
+            "source_data_record_number": 4629,
+            "standardized_feature_value": 4.022351157265512,
+            "transformed_feature_column": "pl_eqt"
+          }
+        ],
+        "scaled_pl_orbeccen": [
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 2,
+              "6": 5,
+              "7": 4,
+              "8": 7
+            },
+            "hostname": "HD 20782",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.95,
+            "pl_name": "HD 20782 b",
+            "source_data_record_number": 940,
+            "standardized_feature_value": 5.791960789113526,
+            "transformed_feature_column": "pl_orbeccen"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 2,
+              "6": 5,
+              "7": 4,
+              "8": 7
+            },
+            "hostname": "HD 28254",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.95,
+            "pl_name": "HD 28254 b",
+            "source_data_record_number": 1070,
+            "standardized_feature_value": 5.791960789113526,
+            "transformed_feature_column": "pl_orbeccen"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 2,
+              "6": 5,
+              "7": 4,
+              "8": 7
+            },
+            "hostname": "HIP 66074",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.948,
+            "pl_name": "HIP 66074 b",
+            "source_data_record_number": 1414,
+            "standardized_feature_value": 5.778691917278638,
+            "transformed_feature_column": "pl_orbeccen"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 2,
+              "6": 5,
+              "7": 4,
+              "8": 7
+            },
+            "hostname": "TIC 241249530",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.9412,
+            "pl_name": "TIC 241249530 b",
+            "source_data_record_number": 5236,
+            "standardized_feature_value": 5.73357775304002,
+            "transformed_feature_column": "pl_orbeccen"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 2,
+              "6": 5,
+              "7": 4,
+              "8": 7
+            },
+            "hostname": "HD 80606",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.93183,
+            "pl_name": "HD 80606 b",
+            "source_data_record_number": 1276,
+            "standardized_feature_value": 5.67141308849357,
+            "transformed_feature_column": "pl_orbeccen"
+          }
+        ]
+      },
+      "observations": 5273,
+      "pearson_correlation_matrix": {
+        "scaled_log10_pl_orbper": {
+          "scaled_log10_pl_orbper": 1.0,
+          "scaled_log10_pl_rade": 0.4108463790932279,
+          "scaled_pl_eqt": -0.7049048319958728,
+          "scaled_pl_orbeccen": 0.44830458764604436
+        },
+        "scaled_log10_pl_rade": {
+          "scaled_log10_pl_orbper": 0.4108463790932279,
+          "scaled_log10_pl_rade": 1.0,
+          "scaled_pl_eqt": 0.008523584657605778,
+          "scaled_pl_orbeccen": 0.3980709844018099
+        },
+        "scaled_pl_eqt": {
+          "scaled_log10_pl_orbper": -0.7049048319958728,
+          "scaled_log10_pl_rade": 0.008523584657605778,
+          "scaled_pl_eqt": 1.0,
+          "scaled_pl_orbeccen": -0.2503290832714062
+        },
+        "scaled_pl_orbeccen": {
+          "scaled_log10_pl_orbper": 0.44830458764604436,
+          "scaled_log10_pl_rade": 0.3980709844018099,
+          "scaled_pl_eqt": -0.2503290832714062,
+          "scaled_pl_orbeccen": 1.0
+        }
+      },
+      "strongest_absolute_feature_correlations": [
+        {
+          "absolute_pearson_r": 0.7049048319958728,
+          "feature_a": "scaled_log10_pl_orbper",
+          "feature_b": "scaled_pl_eqt",
+          "pearson_r": -0.7049048319958728
+        },
+        {
+          "absolute_pearson_r": 0.44830458764604436,
+          "feature_a": "scaled_log10_pl_orbper",
+          "feature_b": "scaled_pl_orbeccen",
+          "pearson_r": 0.44830458764604436
+        },
+        {
+          "absolute_pearson_r": 0.4108463790932279,
+          "feature_a": "scaled_log10_pl_rade",
+          "feature_b": "scaled_log10_pl_orbper",
+          "pearson_r": 0.4108463790932279
+        },
+        {
+          "absolute_pearson_r": 0.3980709844018099,
+          "feature_a": "scaled_log10_pl_rade",
+          "feature_b": "scaled_pl_orbeccen",
+          "pearson_r": 0.3980709844018099
+        },
+        {
+          "absolute_pearson_r": 0.2503290832714062,
+          "feature_a": "scaled_pl_eqt",
+          "feature_b": "scaled_pl_orbeccen",
+          "pearson_r": -0.2503290832714062
+        }
+      ]
+    },
+    "without_temp": {
+      "extreme_value_interpretation": "Largest absolute standardized observations are diagnostic review leads. Their assignment does not establish that the corresponding measurement is invalid or that it caused a cluster boundary.",
+      "feature_columns_passed_to_kmeans": [
+        "scaled_log10_pl_rade",
+        "scaled_log10_pl_orbper",
+        "scaled_pl_orbeccen"
+      ],
+      "feature_distributions_on_standardized_inputs": {
+        "scaled_log10_pl_orbper": {
+          "correlation_method": "Pearson correlation of the standardized K-means input columns",
+          "maximum": 6.065709358200301,
+          "mean": 0.0,
+          "median": -0.23548807145148368,
+          "minimum": -2.236508881840728,
+          "q1": -0.703301393455494,
+          "q3": 0.3925560640102199,
+          "records": 5273,
+          "standard_deviation_sample": 1.0000948361707285,
+          "zero_count": 0
+        },
+        "scaled_log10_pl_rade": {
+          "correlation_method": "Pearson correlation of the standardized K-means input columns",
+          "maximum": 2.2062783933623855,
+          "mean": 4.3120363254927377e-17,
+          "median": -0.3029142641959752,
+          "minimum": -2.6840314018159663,
+          "q1": -0.7870374409061117,
+          "q3": 1.2115847512719222,
+          "records": 5273,
+          "standard_deviation_sample": 1.0000948361707287,
+          "zero_count": 0
+        },
+        "scaled_pl_orbeccen": {
+          "correlation_method": "Pearson correlation of the standardized K-means input columns",
+          "maximum": 5.791960789113526,
+          "mean": 0.0,
+          "median": -0.5107533324582322,
+          "minimum": -0.5107533324582322,
+          "q1": -0.5107533324582322,
+          "q3": 0.07971146419427988,
+          "records": 5273,
+          "standard_deviation_sample": 1.0000948361707287,
+          "zero_count": 0
+        }
+      },
+      "label": "Experiment B - three features excluding temperature",
+      "largest_absolute_standardized_observations_by_feature": {
+        "scaled_log10_pl_orbper": [
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 4,
+              "6": 5,
+              "7": 4,
+              "8": 4
+            },
+            "hostname": "VHS J125601.92-125723.9",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 5800000.0,
+            "pl_name": "VHS J125601.92-125723.9 b",
+            "source_data_record_number": 6185,
+            "standardized_feature_value": 6.065709358200301,
+            "transformed_feature_column": "log10_pl_orbper"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 2,
+              "5": 1,
+              "6": 1,
+              "7": 1,
+              "8": 3
+            },
+            "hostname": "HD 143811 A",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 117000.0,
+            "pl_name": "HD 143811 AB b",
+            "source_data_record_number": 721,
+            "standardized_feature_value": 4.191347753220738,
+            "transformed_feature_column": "log10_pl_orbper"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 2,
+              "5": 1,
+              "6": 1,
+              "7": 1,
+              "8": 3
+            },
+            "hostname": "HD 105618",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 77114.07158,
+            "pl_name": "HD 105618 c",
+            "source_data_record_number": 558,
+            "standardized_feature_value": 3.991165527112553,
+            "transformed_feature_column": "log10_pl_orbper"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 4,
+              "6": 5,
+              "7": 4,
+              "8": 4
+            },
+            "hostname": "HD 62364",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 74839.94555,
+            "pl_name": "HD 62364 c",
+            "source_data_record_number": 1207,
+            "standardized_feature_value": 3.9767917561702664,
+            "transformed_feature_column": "log10_pl_orbper"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 4,
+              "6": 5,
+              "7": 4,
+              "8": 1
+            },
+            "hostname": "HR 8799",
+            "original_physical_feature": "pl_orbper",
+            "original_physical_value": 69000.0,
+            "pl_name": "HR 8799 c",
+            "source_data_record_number": 1455,
+            "standardized_feature_value": 3.937779233348945,
+            "transformed_feature_column": "log10_pl_orbper"
+          }
+        ],
+        "scaled_log10_pl_rade": [
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 0,
+              "4": 0,
+              "5": 3,
+              "6": 0,
+              "7": 6,
+              "8": 5
+            },
+            "hostname": "Kepler-37",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 0.3098,
+            "pl_name": "Kepler-37 b",
+            "source_data_record_number": 4025,
+            "standardized_feature_value": -2.6840314018159663,
+            "transformed_feature_column": "log10_pl_rade"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 0,
+              "4": 0,
+              "5": 3,
+              "6": 0,
+              "7": 6,
+              "8": 5
+            },
+            "hostname": "Kepler-37",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 0.37,
+            "pl_name": "Kepler-37 e",
+            "source_data_record_number": 4028,
+            "standardized_feature_value": -2.4931922350248423,
+            "transformed_feature_column": "log10_pl_rade"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 0,
+              "4": 0,
+              "5": 3,
+              "6": 0,
+              "7": 6,
+              "8": 5
+            },
+            "hostname": "Kepler-444",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 0.403,
+            "pl_name": "Kepler-444 b",
+            "source_data_record_number": 4176,
+            "standardized_feature_value": -2.4013776791614667,
+            "transformed_feature_column": "log10_pl_rade"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 0,
+              "4": 0,
+              "5": 3,
+              "6": 0,
+              "7": 6,
+              "8": 5
+            },
+            "hostname": "Kepler-102",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 0.46,
+            "pl_name": "Kepler-102 b",
+            "source_data_record_number": 2205,
+            "standardized_feature_value": -2.2592070676735085,
+            "transformed_feature_column": "log10_pl_rade"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 1,
+              "3": 2,
+              "4": 3,
+              "5": 2,
+              "6": 3,
+              "7": 3,
+              "8": 2
+            },
+            "hostname": "Kepler-1979",
+            "original_physical_feature": "pl_rade",
+            "original_physical_value": 29.33,
+            "pl_name": "Kepler-1979 b",
+            "source_data_record_number": 3497,
+            "standardized_feature_value": 2.2062783933623855,
+            "transformed_feature_column": "log10_pl_rade"
+          }
+        ],
+        "scaled_pl_orbeccen": [
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 4,
+              "6": 5,
+              "7": 4,
+              "8": 4
+            },
+            "hostname": "HD 20782",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.95,
+            "pl_name": "HD 20782 b",
+            "source_data_record_number": 940,
+            "standardized_feature_value": 5.791960789113526,
+            "transformed_feature_column": "pl_orbeccen"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 4,
+              "6": 5,
+              "7": 4,
+              "8": 4
+            },
+            "hostname": "HD 28254",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.95,
+            "pl_name": "HD 28254 b",
+            "source_data_record_number": 1070,
+            "standardized_feature_value": 5.791960789113526,
+            "transformed_feature_column": "pl_orbeccen"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 4,
+              "6": 5,
+              "7": 4,
+              "8": 4
+            },
+            "hostname": "HIP 66074",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.948,
+            "pl_name": "HIP 66074 b",
+            "source_data_record_number": 1414,
+            "standardized_feature_value": 5.778691917278638,
+            "transformed_feature_column": "pl_orbeccen"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 4,
+              "6": 5,
+              "7": 4,
+              "8": 4
+            },
+            "hostname": "TIC 241249530",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.9412,
+            "pl_name": "TIC 241249530 b",
+            "source_data_record_number": 5236,
+            "standardized_feature_value": 5.73357775304002,
+            "transformed_feature_column": "pl_orbeccen"
+          },
+          {
+            "cluster_id_by_k": {
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 4,
+              "6": 5,
+              "7": 4,
+              "8": 4
+            },
+            "hostname": "HD 80606",
+            "original_physical_feature": "pl_orbeccen",
+            "original_physical_value": 0.93183,
+            "pl_name": "HD 80606 b",
+            "source_data_record_number": 1276,
+            "standardized_feature_value": 5.67141308849357,
+            "transformed_feature_column": "pl_orbeccen"
+          }
+        ]
+      },
+      "observations": 5273,
+      "pearson_correlation_matrix": {
+        "scaled_log10_pl_orbper": {
+          "scaled_log10_pl_orbper": 1.0,
+          "scaled_log10_pl_rade": 0.4108463790932279,
+          "scaled_pl_orbeccen": 0.44830458764604436
+        },
+        "scaled_log10_pl_rade": {
+          "scaled_log10_pl_orbper": 0.4108463790932279,
+          "scaled_log10_pl_rade": 1.0,
+          "scaled_pl_orbeccen": 0.3980709844018099
+        },
+        "scaled_pl_orbeccen": {
+          "scaled_log10_pl_orbper": 0.44830458764604436,
+          "scaled_log10_pl_rade": 0.3980709844018099,
+          "scaled_pl_orbeccen": 1.0
+        }
+      },
+      "strongest_absolute_feature_correlations": [
+        {
+          "absolute_pearson_r": 0.44830458764604436,
+          "feature_a": "scaled_log10_pl_orbper",
+          "feature_b": "scaled_pl_orbeccen",
+          "pearson_r": 0.44830458764604436
+        },
+        {
+          "absolute_pearson_r": 0.4108463790932279,
+          "feature_a": "scaled_log10_pl_rade",
+          "feature_b": "scaled_log10_pl_orbper",
+          "pearson_r": 0.4108463790932279
+        },
+        {
+          "absolute_pearson_r": 0.3980709844018099,
+          "feature_a": "scaled_log10_pl_rade",
+          "feature_b": "scaled_pl_orbeccen",
+          "pearson_r": 0.3980709844018099
+        }
+      ]
+    }
+  },
+  "method": {
+    "correlation": "Pearson correlation of the exact standardized K-means input columns.",
+    "extreme_observation_rule": "Five largest absolute standardized input values per feature are listed as review leads.",
+    "feature_distribution_basis": "The standardized feature columns actually passed to K-means.",
+    "small_cluster_review_flag": {
+      "meaning": "Clusters under this share are listed for review only; no filtering or merging occurs.",
+      "threshold_count": 52.73,
+      "threshold_percent": 1.0
+    }
+  }
+}

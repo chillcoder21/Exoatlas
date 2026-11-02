@@ -1,0 +1,440 @@
+.page {
+  padding-top: clamp(3.5rem, 7vw, 6.8rem);
+  padding-bottom: clamp(4rem, 7vw, 6rem);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(18rem, 0.88fr);
+  align-items: center;
+  gap: clamp(3rem, 8vw, 8rem);
+  padding-bottom: clamp(4.5rem, 8vw, 7.5rem);
+}
+
+.heroIntro {
+  max-width: 43rem;
+}
+
+.eyebrow {
+  margin: 0 0 1.4rem;
+  color: var(--accent-teal);
+  font-family: var(--font-mono);
+  font-size: 0.69rem;
+  letter-spacing: 0.11em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 12ch;
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(2.8rem, 5.3vw, 5rem);
+  font-weight: 540;
+  letter-spacing: -0.058em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.title:focus {
+  outline: none;
+}
+
+.lead {
+  max-width: 34rem;
+  margin: 1.65rem 0 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
+  line-height: 1.75;
+}
+
+.primaryLink {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 2rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--accent-teal);
+  color: var(--color-text);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition:
+    gap var(--motion-fast) var(--ease-out),
+    color var(--motion-fast) var(--ease-out);
+}
+
+.primaryLink:hover {
+  gap: 1.2rem;
+  color: var(--accent-teal);
+}
+
+.primaryLink svg,
+.chapterArrow {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.35;
+}
+
+.questionPanel {
+  position: relative;
+  max-width: 31rem;
+  padding: 1.4rem 0 1.5rem 1.6rem;
+  border-left: 1px solid var(--accent-amber);
+}
+
+.panelHeading {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.panelIndex {
+  color: var(--accent-amber);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+.panelLabel {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.7rem;
+  font-weight: 550;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.question {
+  margin: 1.35rem 0 0;
+  color: var(--color-text);
+  font-size: clamp(1.22rem, 2.1vw, 1.6rem);
+  font-weight: 430;
+  letter-spacing: -0.025em;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+.questionTopics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.3rem;
+  margin-top: 1.5rem;
+  color: var(--color-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.questionTopics span + span::before {
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  margin: 0 0.7rem 0.1rem 0;
+  border-radius: 50%;
+  background: var(--accent-coral);
+  content: "";
+}
+
+.chapters {
+  padding-top: 2.2rem;
+  border-top: 1px solid var(--color-border);
+  scroll-margin-top: 1.5rem;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sectionHeading .eyebrow {
+  margin-bottom: 0.65rem;
+}
+
+.chaptersTitle {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 520;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.sectionIntro {
+  max-width: 20rem;
+  margin: 0 0 0.15rem;
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.chapterList {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  list-style: none;
+}
+
+.chapterItem {
+  min-width: 0;
+}
+
+.chapterItem + .chapterItem {
+  border-left: 1px solid var(--color-border);
+}
+
+.chapterLink {
+  display: flex;
+  min-height: 10.2rem;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 1rem 0.8rem 1.1rem;
+  transition: background-color var(--motion-fast) var(--ease-out);
+}
+
+.chapterLink:hover {
+  background: var(--color-surface);
+}
+
+.chapterIndex {
+  padding-top: 0.13rem;
+  color: var(--section-accent);
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+}
+
+.chapterBody {
+  display: grid;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.chapterTitle {
+  color: var(--color-text);
+  font-size: 0.83rem;
+  font-weight: 630;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.chapterDescription {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+
+.chapterArrow {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-top: 0.1rem;
+  color: var(--color-subtle);
+  transition:
+    color var(--motion-fast) var(--ease-out),
+    transform var(--motion-fast) var(--ease-out);
+}
+
+.chapterLink:hover .chapterArrow {
+  transform: translateX(0.18rem);
+  color: var(--section-accent);
+}
+
+.chapterNote {
+  margin: 0.9rem 0 0;
+  color: var(--color-subtle);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1050px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.82fr);
+    gap: 3rem;
+  }
+
+  .chapterList {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .chapterItem:nth-child(4) {
+    border-left: 0;
+  }
+
+  .chapterItem:nth-child(n + 4) {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .chapterLink {
+    min-height: 8.5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .page {
+    padding-top: 3.25rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    padding-bottom: 4rem;
+  }
+
+  .title {
+    max-width: 14ch;
+    font-size: clamp(2.65rem, 10vw, 4.1rem);
+  }
+
+  .questionPanel {
+    max-width: none;
+    padding-block: 0.9rem;
+  }
+
+  .sectionHeading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .sectionIntro {
+    max-width: 32rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .chapterList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .chapterItem:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .chapterItem:nth-child(even) {
+    border-left: 1px solid var(--color-border);
+  }
+
+  .chapterItem:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .chapterItem:nth-child(n + 4) {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .chapterLink {
+    min-height: 8rem;
+    gap: 0.55rem;
+    padding-inline: 0.65rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .chapterList {
+    grid-template-columns: 1fr;
+  }
+
+  .chapterItem,
+  .chapterItem:nth-child(3),
+  .chapterItem:nth-child(4) {
+    border-top: 1px solid var(--color-border);
+    border-left: 0;
+  }
+
+  .chapterItem:first-child {
+    border-top: 0;
+  }
+
+  .chapterLink {
+    min-height: 5.5rem;
+    padding-inline: 0.2rem;
+  }
+}
+
+/* The opening page is an editorial index, not a dashboard landing screen. */
+.page {
+  padding-top: clamp(2.8rem, 6vw, 5.1rem);
+}
+
+.hero {
+  grid-template-columns: minmax(0, 1.18fr) minmax(15rem, 0.82fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  padding-bottom: clamp(3.25rem, 6vw, 5.5rem);
+}
+
+.title {
+  max-width: 13ch;
+  font-size: clamp(2.55rem, 4.8vw, 4.5rem);
+  letter-spacing: -0.062em;
+}
+
+.lead {
+  max-width: 39rem;
+  font-size: clamp(0.98rem, 1.25vw, 1.08rem);
+}
+
+.questionPanel {
+  max-width: 28rem;
+  padding-left: 1.25rem;
+  border-left-color: var(--color-warning);
+}
+
+.question {
+  max-width: 30ch;
+  font-size: clamp(1.12rem, 1.75vw, 1.4rem);
+  line-height: 1.5;
+}
+
+.questionTopics span + span::before {
+  background: var(--color-observation);
+}
+
+.chapters {
+  padding-top: 1.8rem;
+}
+
+.chapterList {
+  border-color: var(--color-rule-strong);
+}
+
+.chapterLink {
+  min-height: 9rem;
+  padding-inline: 0.65rem;
+}
+
+.chapterItem + .chapterItem {
+  border-left-color: var(--color-rule);
+}
+
+.chapterLink:hover {
+  background: color-mix(in srgb, var(--color-surface) 76%, transparent);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .questionPanel {
+    max-width: 38rem;
+  }
+
+  .chapterLink {
+    min-height: auto;
+    padding: 0.9rem 0.3rem;
+  }
+}

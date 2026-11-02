@@ -1,0 +1,118 @@
+{
+  "dataset": {
+    "application_data": "data/processed/planets_application.csv",
+    "primary_model_id": "exoatlas-kmeans-with-temperature-k4",
+    "primary_model_k": 4,
+    "source_name": "PSCompPars_2026.10.30_13.47.46.csv",
+    "source_sha256": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30"
+  },
+  "distributions": {
+    "centroid_distance_percentile": {
+      "histogram": {
+        "0-10": 526,
+        "10-20": 527,
+        "20-30": 527,
+        "30-40": 528,
+        "40-50": 527,
+        "50-60": 526,
+        "60-70": 528,
+        "70-80": 527,
+        "80-90": 527,
+        "90-100": 530
+      },
+      "maximum": 100.0,
+      "median": 50.03673769287289,
+      "minimum": 0.0449842555105713,
+      "q1": 25.055106539309328,
+      "q3": 75.03373819163292
+    },
+    "feature_relations": {
+      "pl_eqt": {
+        "above_q3": 1319,
+        "below_q1": 1317,
+        "within_q1_q3": 2637
+      },
+      "pl_orbeccen": {
+        "above_q3": 1157,
+        "below_q1": 214,
+        "within_q1_q3": 3902
+      },
+      "pl_orbper": {
+        "above_q3": 1319,
+        "below_q1": 1319,
+        "within_q1_q3": 2635
+      },
+      "pl_rade": {
+        "above_q3": 1278,
+        "below_q1": 1306,
+        "within_q1_q3": 2689
+      }
+    },
+    "silhouette": {
+      "histogram": {
+        "-0.5 to 0": 119,
+        "-1 to -0.5": 0,
+        "0 to 0.25": 1463,
+        "0.25 to 0.5": 2656,
+        "0.5 to 0.75": 1035,
+        "0.75 to 1": 0
+      },
+      "maximum": 0.6048613152809634,
+      "median": 0.3790780199270029,
+      "minimum": -0.21662370511227497,
+      "negative_count": 119
+    }
+  },
+  "input_sha256_after": {
+    "artifacts/clustering/kmeans_with_temp_k4.joblib": "6b97ebe7a5d53e22609e333a7cc0b916e32552b26faa371d923d3718f88d7e18",
+    "artifacts/preprocessing/scaler_with_temp.joblib": "4be14920e66dedcad396b72e95d405cf4385689dbebc6a3a44008c064119ec91",
+    "data/cluster_experiments/cluster_assignments_with_temp_k4.csv": "fba658a9ac87bf53ee5f3ee6de49f7f5eb467f4461f77ac6479217f915e3f9e3",
+    "data/cluster_validation/cluster_silhouette_validation.csv": "8609b61916462573f884c98b656f36d9761c321786042d60d5ec5bd690a7f442",
+    "data/metadata/cluster_profiles.json": "546a08c5c9184740a756d299e6f4ce16f9913cebfdaa966c4a6987a010c3098f",
+    "data/processed/clustering_features_with_temp.csv": "2912708c2573246f89d2868774d1f6e67cdca8a1efcfd5e8bc11155778d864ae",
+    "data/processed/planets_application.csv": "78b2dac5829ba58cdd68fadc627e4b8de73c4d4f2dce48659d2702d92f113da8",
+    "data/raw/PSCompPars_2026.10.30_13.47.46.csv": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30"
+  },
+  "input_sha256_before": {
+    "artifacts/clustering/kmeans_with_temp_k4.joblib": "6b97ebe7a5d53e22609e333a7cc0b916e32552b26faa371d923d3718f88d7e18",
+    "artifacts/preprocessing/scaler_with_temp.joblib": "4be14920e66dedcad396b72e95d405cf4385689dbebc6a3a44008c064119ec91",
+    "data/cluster_experiments/cluster_assignments_with_temp_k4.csv": "fba658a9ac87bf53ee5f3ee6de49f7f5eb467f4461f77ac6479217f915e3f9e3",
+    "data/cluster_validation/cluster_silhouette_validation.csv": "8609b61916462573f884c98b656f36d9761c321786042d60d5ec5bd690a7f442",
+    "data/metadata/cluster_profiles.json": "546a08c5c9184740a756d299e6f4ce16f9913cebfdaa966c4a6987a010c3098f",
+    "data/processed/clustering_features_with_temp.csv": "2912708c2573246f89d2868774d1f6e67cdca8a1efcfd5e8bc11155778d864ae",
+    "data/processed/planets_application.csv": "78b2dac5829ba58cdd68fadc627e4b8de73c4d4f2dce48659d2702d92f113da8",
+    "data/raw/PSCompPars_2026.10.30_13.47.46.csv": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30"
+  },
+  "limitations": [
+    "Centroid distance, feature-level quartile position, and silhouette measure different properties and must not be collapsed into one outlier score.",
+    "An observation outside the IQR is not automatically anomalous or incorrect.",
+    "Cluster-relative values depend on the frozen exploratory K=4 feature representation and the selected confirmed-planet catalogue.",
+    "Planet records are treated independently even when multiple planets share a host star."
+  ],
+  "method": {
+    "centroid_distance": "Euclidean distance to each planet's frozen assigned K-means centroid in the exact saved four-feature standardized space.",
+    "feature_relations": "Original physical measurements compared with frozen assigned-cluster Q1, median, Q3, and IQR profile values.",
+    "iqr_displacement": "(measurement - cluster median) / cluster IQR; null when the cluster IQR is zero.",
+    "missing_data": "Unassigned catalogue records are preserved with null cluster diagnostics; no imputation or deletion.",
+    "model_fitting": false,
+    "physical_measurements": "Original catalogue hostname and four clustering measurements copied unchanged from the prepared application dataset.",
+    "scaler_refitting": false,
+    "silhouette": "Reused from cluster_validation/cluster_silhouette_validation.csv for experiment=with_temp, joined by pl_name and checked against frozen cluster IDs.",
+    "threshold_policy": "No universal distance threshold or combined outlier score is defined. UI percentile filters select a review range only.",
+    "within_cluster_percentile": "Empirical percentile rank computed separately within assigned cluster using average ranks for ties, multiplied by 100."
+  },
+  "outputs": {
+    "diagnostics_csv": "data/processed/planet_outlier_diagnostics.csv",
+    "diagnostics_csv_sha256": "87009f5ff021caf4dbb6c77c0f87ac51bbc3672efff182298ea15b0e80804851",
+    "json_report": "data/metadata/outlier_analysis_report.json",
+    "markdown_report": "data/metadata/outlier_analysis_report.md"
+  },
+  "preserved_inputs_unchanged": true,
+  "schema_version": 1,
+  "summary": {
+    "assigned_records": 5273,
+    "catalogue_records": 6451,
+    "negative_silhouette_records": 119,
+    "unassigned_records": 1178
+  }
+}

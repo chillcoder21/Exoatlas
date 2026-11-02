@@ -1,0 +1,537 @@
+.shell {
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+  overflow: clip;
+  background: var(--color-canvas);
+}
+
+.skipLink {
+  position: absolute;
+  z-index: 10;
+  top: 0.75rem;
+  left: var(--page-gutter);
+  padding: 0.75rem 1rem;
+  transform: translateY(-160%);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 2px;
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  transition: transform var(--motion-fast) var(--ease-out);
+}
+
+.skipLink:focus {
+  transform: translateY(0);
+}
+
+.masthead {
+  display: flex;
+  width: min(calc(100% - var(--page-gutter) * 2), var(--content-width));
+  min-height: 6.25rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.brand {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 2px;
+}
+
+.brandMark {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: 0 0 auto;
+  color: var(--accent-teal);
+}
+
+.brandText {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.brandName {
+  color: var(--color-text);
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: 0.015em;
+}
+
+.brandCaption,
+.mastheadNote,
+.footerLabel {
+  color: var(--color-muted);
+  font-size: 0.69rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.mastheadNote {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--color-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.075em;
+}
+
+.noteRule {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1px;
+  background: var(--color-border-strong);
+}
+
+.mobileToggle {
+  display: none;
+}
+
+.navigationShell {
+  border-block: 1px solid var(--color-border);
+  background: #101719;
+}
+
+.navigation {
+  width: min(calc(100% - var(--page-gutter) * 2), var(--content-width));
+  margin: 0 auto;
+}
+
+.navigationList {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigationItem {
+  min-width: 0;
+}
+
+.navigationLink {
+  position: relative;
+  display: flex;
+  min-height: 4.35rem;
+  align-items: center;
+  gap: 0.72rem;
+  padding: 0.8rem 0.8rem 0.8rem 0.15rem;
+  border-radius: 1px;
+  color: var(--color-muted);
+  transition:
+    color var(--motion-fast) var(--ease-out),
+    background-color var(--motion-fast) var(--ease-out);
+}
+
+.navigationLink::after {
+  position: absolute;
+  right: 0.8rem;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: var(--section-accent);
+  content: "";
+  transition: transform var(--motion-medium) var(--ease-out);
+}
+
+.navigationLink:hover {
+  color: var(--color-text);
+}
+
+.navigationLink[aria-current="page"] {
+  color: var(--color-text);
+}
+
+.navigationLink[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+.navigationIndex {
+  align-self: flex-start;
+  padding-top: 0.15rem;
+  color: var(--section-accent);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  line-height: 1.3;
+}
+
+.navigationCopy {
+  display: grid;
+  min-width: 0;
+  gap: 0.22rem;
+}
+
+.navigationTitle {
+  overflow: hidden;
+  color: inherit;
+  font-size: 0.79rem;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.navigationDescription {
+  overflow: hidden;
+  color: var(--color-subtle);
+  font-size: 0.65rem;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+}
+
+.pageTransition {
+  width: min(calc(100% - var(--page-gutter) * 2), var(--content-width));
+  min-height: 100%;
+  margin: 0 auto;
+  animation: page-arrive 280ms var(--ease-out) both;
+}
+
+.footer {
+  display: flex;
+  width: min(calc(100% - var(--page-gutter) * 2), var(--content-width));
+  min-height: 4.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+  border-top: 1px solid var(--color-border);
+}
+
+.footerText {
+  color: var(--color-subtle);
+  font-size: 0.74rem;
+}
+
+.footerLabel {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+}
+
+@keyframes page-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(0.45rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .navigationLink {
+    gap: 0.5rem;
+    padding-right: 0.4rem;
+  }
+
+  .navigationDescription {
+    display: none;
+  }
+
+  .navigationTitle {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .masthead {
+    min-height: 5rem;
+  }
+
+  .brandMark {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  .mastheadNote {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid var(--color-border-strong);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    font-size: 0.78rem;
+    transition:
+      border-color var(--motion-fast) var(--ease-out),
+      background-color var(--motion-fast) var(--ease-out);
+  }
+
+  .mobileToggle:hover {
+    border-color: var(--accent-teal);
+    background: var(--color-surface);
+  }
+
+  .menuIcon {
+    display: grid;
+    width: 1rem;
+    gap: 4px;
+  }
+
+  .menuIconLine {
+    display: block;
+    height: 1px;
+    background: currentColor;
+    transition:
+      transform var(--motion-fast) var(--ease-out),
+      opacity var(--motion-fast) var(--ease-out);
+  }
+
+  .menuIconOpen .menuIconLine:first-child {
+    transform: translateY(2.5px) rotate(45deg);
+  }
+
+  .menuIconOpen .menuIconLine:last-child {
+    transform: translateY(-2.5px) rotate(-45deg);
+  }
+
+  .navigationShell {
+    overflow: hidden;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .navigationList {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 var(--page-gutter);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      max-height var(--motion-medium) var(--ease-out),
+      padding var(--motion-medium) var(--ease-out),
+      opacity var(--motion-fast) var(--ease-out),
+      visibility var(--motion-medium);
+  }
+
+  .navigationList[data-open="true"] {
+    max-height: 28rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navigationItem + .navigationItem {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .navigationLink {
+    min-height: 3.65rem;
+    gap: 0.8rem;
+    padding: 0.65rem 0.2rem;
+  }
+
+  .navigationLink::after {
+    right: 0;
+  }
+
+  .navigationIndex {
+    min-width: 1.5rem;
+  }
+
+  .navigationCopy {
+    grid-template-columns: minmax(8rem, 0.7fr) minmax(0, 1.3fr);
+    align-items: baseline;
+    gap: 0.65rem;
+  }
+
+  .navigationTitle {
+    font-size: 0.83rem;
+  }
+
+  .navigationDescription {
+    display: block;
+    font-size: 0.72rem;
+    text-align: right;
+  }
+
+  .footer {
+    min-height: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigationCopy {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.14rem;
+  }
+
+  .navigationDescription {
+    text-align: left;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.45rem;
+    padding-block: 0.9rem;
+  }
+}
+
+/* Atlas folio shell: restrained rules and chapter numbering carry the identity. */
+.masthead {
+  min-height: 5.55rem;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.brandMark {
+  color: var(--color-observation);
+}
+
+.brandName {
+  font-family: var(--font-editorial);
+  font-size: 1.12rem;
+  letter-spacing: -0.035em;
+}
+
+.brandCaption,
+.mastheadNote,
+.footerLabel {
+  letter-spacing: 0.12em;
+}
+
+.mastheadNote {
+  color: var(--color-subtle);
+}
+
+.navigationShell {
+  border-top: 0;
+  background: transparent;
+}
+
+.navigationList {
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.navigationItem + .navigationItem {
+  border-left: 1px solid var(--color-rule);
+}
+
+.navigationLink {
+  min-height: 4.1rem;
+  padding: 0.72rem 0.75rem;
+}
+
+.navigationLink::after {
+  top: 0;
+  bottom: auto;
+  height: 1px;
+}
+
+.navigationLink[aria-current="page"] {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--section-accent) 8%, transparent), transparent 72%);
+}
+
+.navigationIndex {
+  font-size: 0.68rem;
+}
+
+.navigationTitle {
+  font-size: 0.8rem;
+  letter-spacing: -0.015em;
+}
+
+.navigationDescription {
+  font-size: 0.63rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.contextStrip {
+  display: flex;
+  width: min(calc(100% - var(--page-gutter) * 2), var(--content-width));
+  min-width: 0;
+  align-items: baseline;
+  gap: 0.55rem 1rem;
+  margin: 0 auto;
+  padding: 0.65rem 0.2rem;
+  border-bottom: 1px solid var(--color-rule);
+  color: var(--color-muted);
+  font-size: 0.68rem;
+}
+
+.contextStrip > span {
+  color: var(--color-subtle);
+  font-family: var(--font-metadata);
+  font-size: 0.59rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.contextStrip strong {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--color-text);
+  font-family: var(--font-measurement);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.contextStrip a {
+  margin-left: auto;
+  color: var(--color-observation);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--color-observation) 45%, transparent);
+  text-underline-offset: 0.2rem;
+}
+
+.routeLoading {
+  min-height: 44vh;
+  padding-top: 4rem;
+  color: var(--color-muted);
+  font-family: var(--font-metadata);
+  font-size: 0.72rem;
+}
+
+.footer {
+  min-height: 4rem;
+  border-top-color: var(--color-rule-strong);
+}
+
+@media (max-width: 720px) {
+  .navigationList {
+    border-bottom: 0;
+  }
+
+  .navigationItem + .navigationItem {
+    border-left: 0;
+  }
+
+  .contextStrip {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.28rem;
+    padding-block: 0.6rem;
+  }
+
+  .contextStrip a {
+    margin-left: 0;
+  }
+}

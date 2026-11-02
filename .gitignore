@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Frontend dependencies and generated output
+**/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Local datasets (keep the original archive export out of version control)
+data/raw/*
+!data/raw/.gitkeep
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1497 @@
+{
+  "audit_environment": {
+    "numpy_version": "2.5.4",
+    "pandas_version": "3.1.0",
+    "python_version": "3.12.7"
+  },
+  "audit_schema_version": 1,
+  "clustering_eligibility": {
+    "independent_rule_counts_overlap_possible": {
+      "any_infinite_required_feature": 0,
+      "any_missing_required_feature": 1178,
+      "any_nonnumeric_required_feature": 0,
+      "nonpositive_orbital_period": 0,
+      "nonpositive_radius": 0
+    },
+    "records_log_transform_eligible_with_all_four_features": 5273,
+    "records_with_all_four_features_finite_numeric": 5273,
+    "records_with_all_four_features_present": 5273,
+    "review_only_domain_flags_not_used_as_eligibility_filters": {
+      "pl_eqt_nonpositive": 0,
+      "pl_orbeccen_at_least_1": 0,
+      "pl_orbeccen_negative": 0,
+      "pl_orbper_nonpositive": 0,
+      "pl_rade_nonpositive": 0
+    },
+    "rules": [
+      "Require all four planned feature fields to be present for the all-feature count.",
+      "Require each of the four fields to parse as a finite number.",
+      "Require pl_rade > 0 and pl_orbper > 0 for the proposed base-10 logarithms.",
+      "Retain eccentricity zeros. Nonpositive equilibrium temperature and eccentricity outside [0, 1) are reported for review, not silently filtered from the numeric/log-eligible count."
+    ],
+    "stepwise_all_four_feature_exclusions_and_eligibility": {
+      "eligible_all_four_features": 5273,
+      "infinite_value_after_numeric_check": 0,
+      "missing_one_or_more_features": 1178,
+      "nonnumeric_value_after_complete_case_check": 0,
+      "nonpositive_orbital_period_after_radius_check": 0,
+      "nonpositive_radius_after_finite_check": 0
+    },
+    "without_equilibrium_temperature_variant": {
+      "records_log_transform_eligible": 5335,
+      "records_with_all_required_features_finite_numeric": 5335,
+      "records_with_all_required_fields_present": 5335,
+      "required_features": [
+        "pl_rade",
+        "pl_orbper",
+        "pl_orbeccen"
+      ]
+    }
+  },
+  "dataset_overview": {
+    "column_names_and_inferred_types": [
+      {
+        "inferred_dtype": "str",
+        "name": "pl_name"
+      },
+      {
+        "inferred_dtype": "str",
+        "name": "hostname"
+      },
+      {
+        "inferred_dtype": "int64",
+        "name": "sy_snum"
+      },
+      {
+        "inferred_dtype": "int64",
+        "name": "sy_pnum"
+      },
+      {
+        "inferred_dtype": "str",
+        "name": "discoverymethod"
+      },
+      {
+        "inferred_dtype": "int64",
+        "name": "disc_year"
+      },
+      {
+        "inferred_dtype": "str",
+        "name": "disc_facility"
+      },
+      {
+        "inferred_dtype": "int64",
+        "name": "pl_controv_flag"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbper"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbpererr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbpererr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbperlim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbsmax"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbsmaxerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbsmaxerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbsmaxlim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_rade"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_radeerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_radeerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_radelim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_radj"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_radjerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_radjerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_radjlim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_bmasse"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_bmasseerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_bmasseerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_bmasselim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_bmassj"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_bmassjerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_bmassjerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_bmassjlim"
+      },
+      {
+        "inferred_dtype": "str",
+        "name": "pl_bmassprov"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbeccen"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbeccenerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbeccenerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_orbeccenlim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_insol"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_insolerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_insolerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_insollim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_eqt"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_eqterr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_eqterr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "pl_eqtlim"
+      },
+      {
+        "inferred_dtype": "int64",
+        "name": "ttv_flag"
+      },
+      {
+        "inferred_dtype": "str",
+        "name": "st_spectype"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_teff"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_tefferr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_tefferr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_tefflim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_rad"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_raderr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_raderr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_radlim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_mass"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_masserr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_masserr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_masslim"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_met"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_meterr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_meterr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_metlim"
+      },
+      {
+        "inferred_dtype": "str",
+        "name": "st_metratio"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_logg"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_loggerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_loggerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "st_logglim"
+      },
+      {
+        "inferred_dtype": "str",
+        "name": "rastr"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "ra"
+      },
+      {
+        "inferred_dtype": "str",
+        "name": "decstr"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "dec"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_dist"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_disterr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_disterr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_vmag"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_vmagerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_vmagerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_kmag"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_kmagerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_kmagerr2"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_gaiamag"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_gaiamagerr1"
+      },
+      {
+        "inferred_dtype": "float64",
+        "name": "sy_gaiamagerr2"
+      }
+    ],
+    "columns": 84,
+    "inferred_dtype_counts": {
+      "float64": 70,
+      "int64": 5,
+      "str": 9
+    },
+    "records": 6451
+  },
+  "distributions": {
+    "disc_year": {
+      "column_present": true,
+      "frequency_by_year_including_missing": [
+        {
+          "count": 2,
+          "year": "1992"
+        },
+        {
+          "count": 1,
+          "year": "1994"
+        },
+        {
+          "count": 1,
+          "year": "1995"
+        },
+        {
+          "count": 6,
+          "year": "1996"
+        },
+        {
+          "count": 1,
+          "year": "1997"
+        },
+        {
+          "count": 6,
+          "year": "1998"
+        },
+        {
+          "count": 13,
+          "year": "1999"
+        },
+        {
+          "count": 16,
+          "year": "2000"
+        },
+        {
+          "count": 12,
+          "year": "2001"
+        },
+        {
+          "count": 29,
+          "year": "2002"
+        },
+        {
+          "count": 22,
+          "year": "2003"
+        },
+        {
+          "count": 27,
+          "year": "2004"
+        },
+        {
+          "count": 36,
+          "year": "2005"
+        },
+        {
+          "count": 32,
+          "year": "2006"
+        },
+        {
+          "count": 52,
+          "year": "2007"
+        },
+        {
+          "count": 62,
+          "year": "2008"
+        },
+        {
+          "count": 87,
+          "year": "2009"
+        },
+        {
+          "count": 93,
+          "year": "2010"
+        },
+        {
+          "count": 141,
+          "year": "2011"
+        },
+        {
+          "count": 144,
+          "year": "2012"
+        },
+        {
+          "count": 128,
+          "year": "2013"
+        },
+        {
+          "count": 872,
+          "year": "2014"
+        },
+        {
+          "count": 155,
+          "year": "2015"
+        },
+        {
+          "count": 1504,
+          "year": "2016"
+        },
+        {
+          "count": 152,
+          "year": "2017"
+        },
+        {
+          "count": 308,
+          "year": "2018"
+        },
+        {
+          "count": 194,
+          "year": "2019"
+        },
+        {
+          "count": 234,
+          "year": "2020"
+        },
+        {
+          "count": 564,
+          "year": "2021"
+        },
+        {
+          "count": 367,
+          "year": "2022"
+        },
+        {
+          "count": 323,
+          "year": "2023"
+        },
+        {
+          "count": 260,
+          "year": "2024"
+        },
+        {
+          "count": 246,
+          "year": "2025"
+        },
+        {
+          "count": 361,
+          "year": "2026"
+        }
+      ],
+      "statistics": {
+        "finite_numeric_count": 6451,
+        "maximum": 2026.0,
+        "median": 2016.0,
+        "minimum": 1992.0,
+        "missing_count": 0,
+        "non_numeric_count": 0,
+        "q1": 2014.0,
+        "q3": 2021.0,
+        "standard_deviation_sample": 5.202505366186605
+      }
+    },
+    "discoverymethod": {
+      "column_present": true,
+      "frequencies": [
+        {
+          "count": 4785,
+          "percent_of_records": 74.174547,
+          "value": "Transit"
+        },
+        {
+          "count": 1204,
+          "percent_of_records": 18.663773,
+          "value": "Radial Velocity"
+        },
+        {
+          "count": 292,
+          "percent_of_records": 4.52643,
+          "value": "Microlensing"
+        },
+        {
+          "count": 98,
+          "percent_of_records": 1.519144,
+          "value": "Imaging"
+        },
+        {
+          "count": 29,
+          "percent_of_records": 0.449543,
+          "value": "Transit Timing Variations"
+        },
+        {
+          "count": 17,
+          "percent_of_records": 0.263525,
+          "value": "Eclipse Timing Variations"
+        },
+        {
+          "count": 9,
+          "percent_of_records": 0.139513,
+          "value": "Orbital Brightness Modulation"
+        },
+        {
+          "count": 8,
+          "percent_of_records": 0.124012,
+          "value": "Pulsar Timing"
+        },
+        {
+          "count": 6,
+          "percent_of_records": 0.093009,
+          "value": "Astrometry"
+        },
+        {
+          "count": 2,
+          "percent_of_records": 0.031003,
+          "value": "Pulsation Timing Variations"
+        },
+        {
+          "count": 1,
+          "percent_of_records": 0.015501,
+          "value": "Disk Kinematics"
+        }
+      ]
+    },
+    "pl_bmassprov": {
+      "column_present": true,
+      "frequencies": [
+        {
+          "count": 3035,
+          "percent_of_records": 47.046969,
+          "value": "M-R relationship"
+        },
+        {
+          "count": 2477,
+          "percent_of_records": 38.397148,
+          "value": "Mass"
+        },
+        {
+          "count": 924,
+          "percent_of_records": 14.323361,
+          "value": "Msini"
+        },
+        {
+          "count": 15,
+          "percent_of_records": 0.232522,
+          "value": "Msin(i)/sin(i)"
+        }
+      ]
+    }
+  },
+  "duplicate_checks": {
+    "exact_duplicate_records": {
+      "duplicate_groups": 0,
+      "extra_rows_beyond_first_copy": 0,
+      "rows_in_duplicate_groups": 0
+    },
+    "planet_identifier": {
+      "duplicate_identifier_groups": 0,
+      "examples": [],
+      "extra_rows_beyond_first_identifier_occurrence": 0,
+      "identifier_column": "pl_name",
+      "non_missing_identifier_rows": 6451,
+      "rows_in_duplicate_identifier_groups": 0,
+      "unique_identifiers": 6451
+    }
+  },
+  "host_star_relationships": {
+    "host_stars_with_multiple_planets": 1069,
+    "hostname_column_present": true,
+    "largest_multi_planet_hosts": [
+      {
+        "hostname": "KOI-351",
+        "planet_records": 8
+      },
+      {
+        "hostname": "TRAPPIST-1",
+        "planet_records": 7
+      },
+      {
+        "hostname": "HD 10180",
+        "planet_records": 6
+      },
+      {
+        "hostname": "HD 110067",
+        "planet_records": 6
+      },
+      {
+        "hostname": "HD 191939",
+        "planet_records": 6
+      },
+      {
+        "hostname": "HD 219134",
+        "planet_records": 6
+      },
+      {
+        "hostname": "HD 34445",
+        "planet_records": 6
+      },
+      {
+        "hostname": "HIP 41378",
+        "planet_records": 6
+      },
+      {
+        "hostname": "K2-138",
+        "planet_records": 6
+      },
+      {
+        "hostname": "Kepler-11",
+        "planet_records": 6
+      },
+      {
+        "hostname": "Kepler-20",
+        "planet_records": 6
+      },
+      {
+        "hostname": "Kepler-80",
+        "planet_records": 6
+      },
+      {
+        "hostname": "TOI-1136",
+        "planet_records": 6
+      },
+      {
+        "hostname": "TOI-178",
+        "planet_records": 6
+      },
+      {
+        "hostname": "55 Cnc",
+        "planet_records": 5
+      },
+      {
+        "hostname": "GJ 667 C",
+        "planet_records": 5
+      },
+      {
+        "hostname": "HD 108236",
+        "planet_records": 5
+      },
+      {
+        "hostname": "HD 134606",
+        "planet_records": 5
+      },
+      {
+        "hostname": "HD 158259",
+        "planet_records": 5
+      },
+      {
+        "hostname": "HD 23472",
+        "planet_records": 5
+      }
+    ],
+    "percent_of_records_with_hostname_in_multi_planet_systems": 41.435436,
+    "planet_records_in_multi_planet_systems": 2673,
+    "records_missing_hostname": 0,
+    "records_with_hostname": 6451,
+    "system_size_distribution": [
+      {
+        "host_count": 3778,
+        "planets_per_host": 1
+      },
+      {
+        "host_count": 720,
+        "planets_per_host": 2
+      },
+      {
+        "host_count": 223,
+        "planets_per_host": 3
+      },
+      {
+        "host_count": 83,
+        "planets_per_host": 4
+      },
+      {
+        "host_count": 29,
+        "planets_per_host": 5
+      },
+      {
+        "host_count": 12,
+        "planets_per_host": 6
+      },
+      {
+        "host_count": 1,
+        "planets_per_host": 7
+      },
+      {
+        "host_count": 1,
+        "planets_per_host": 8
+      }
+    ],
+    "unique_host_stars": 4847
+  },
+  "missing_values_by_column": {
+    "dec": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "decstr": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "disc_facility": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "disc_year": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "discoverymethod": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "hostname": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "pl_bmasse": {
+      "missing_count": 30,
+      "missing_percent": 0.465044
+    },
+    "pl_bmasseerr1": {
+      "missing_count": 3343,
+      "missing_percent": 51.821423
+    },
+    "pl_bmasseerr2": {
+      "missing_count": 3343,
+      "missing_percent": 51.821423
+    },
+    "pl_bmasselim": {
+      "missing_count": 30,
+      "missing_percent": 0.465044
+    },
+    "pl_bmassj": {
+      "missing_count": 30,
+      "missing_percent": 0.465044
+    },
+    "pl_bmassjerr1": {
+      "missing_count": 3343,
+      "missing_percent": 51.821423
+    },
+    "pl_bmassjerr2": {
+      "missing_count": 3343,
+      "missing_percent": 51.821423
+    },
+    "pl_bmassjlim": {
+      "missing_count": 30,
+      "missing_percent": 0.465044
+    },
+    "pl_bmassprov": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "pl_controv_flag": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "pl_eqt": {
+      "missing_count": 540,
+      "missing_percent": 8.370795
+    },
+    "pl_eqterr1": {
+      "missing_count": 3694,
+      "missing_percent": 57.26244
+    },
+    "pl_eqterr2": {
+      "missing_count": 3694,
+      "missing_percent": 57.26244
+    },
+    "pl_eqtlim": {
+      "missing_count": 540,
+      "missing_percent": 8.370795
+    },
+    "pl_insol": {
+      "missing_count": 596,
+      "missing_percent": 9.238878
+    },
+    "pl_insolerr1": {
+      "missing_count": 1681,
+      "missing_percent": 26.057976
+    },
+    "pl_insolerr2": {
+      "missing_count": 1681,
+      "missing_percent": 26.057976
+    },
+    "pl_insollim": {
+      "missing_count": 596,
+      "missing_percent": 9.238878
+    },
+    "pl_name": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "pl_orbeccen": {
+      "missing_count": 1068,
+      "missing_percent": 16.555573
+    },
+    "pl_orbeccenerr1": {
+      "missing_count": 4507,
+      "missing_percent": 69.865137
+    },
+    "pl_orbeccenerr2": {
+      "missing_count": 4507,
+      "missing_percent": 69.865137
+    },
+    "pl_orbeccenlim": {
+      "missing_count": 1068,
+      "missing_percent": 16.555573
+    },
+    "pl_orbper": {
+      "missing_count": 354,
+      "missing_percent": 5.487521
+    },
+    "pl_orbpererr1": {
+      "missing_count": 850,
+      "missing_percent": 13.176252
+    },
+    "pl_orbpererr2": {
+      "missing_count": 850,
+      "missing_percent": 13.176252
+    },
+    "pl_orbperlim": {
+      "missing_count": 354,
+      "missing_percent": 5.487521
+    },
+    "pl_orbsmax": {
+      "missing_count": 495,
+      "missing_percent": 7.673229
+    },
+    "pl_orbsmaxerr1": {
+      "missing_count": 2429,
+      "missing_percent": 37.653077
+    },
+    "pl_orbsmaxerr2": {
+      "missing_count": 2429,
+      "missing_percent": 37.653077
+    },
+    "pl_orbsmaxlim": {
+      "missing_count": 494,
+      "missing_percent": 7.657727
+    },
+    "pl_rade": {
+      "missing_count": 50,
+      "missing_percent": 0.775074
+    },
+    "pl_radeerr1": {
+      "missing_count": 1974,
+      "missing_percent": 30.599907
+    },
+    "pl_radeerr2": {
+      "missing_count": 1974,
+      "missing_percent": 30.599907
+    },
+    "pl_radelim": {
+      "missing_count": 50,
+      "missing_percent": 0.775074
+    },
+    "pl_radj": {
+      "missing_count": 50,
+      "missing_percent": 0.775074
+    },
+    "pl_radjerr1": {
+      "missing_count": 1974,
+      "missing_percent": 30.599907
+    },
+    "pl_radjerr2": {
+      "missing_count": 1974,
+      "missing_percent": 30.599907
+    },
+    "pl_radjlim": {
+      "missing_count": 50,
+      "missing_percent": 0.775074
+    },
+    "ra": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "rastr": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "st_logg": {
+      "missing_count": 337,
+      "missing_percent": 5.223996
+    },
+    "st_loggerr1": {
+      "missing_count": 626,
+      "missing_percent": 9.703922
+    },
+    "st_loggerr2": {
+      "missing_count": 626,
+      "missing_percent": 9.703922
+    },
+    "st_logglim": {
+      "missing_count": 337,
+      "missing_percent": 5.223996
+    },
+    "st_mass": {
+      "missing_count": 9,
+      "missing_percent": 0.139513
+    },
+    "st_masserr1": {
+      "missing_count": 287,
+      "missing_percent": 4.448923
+    },
+    "st_masserr2": {
+      "missing_count": 288,
+      "missing_percent": 4.464424
+    },
+    "st_masslim": {
+      "missing_count": 9,
+      "missing_percent": 0.139513
+    },
+    "st_met": {
+      "missing_count": 699,
+      "missing_percent": 10.835529
+    },
+    "st_meterr1": {
+      "missing_count": 985,
+      "missing_percent": 15.268951
+    },
+    "st_meterr2": {
+      "missing_count": 985,
+      "missing_percent": 15.268951
+    },
+    "st_metlim": {
+      "missing_count": 699,
+      "missing_percent": 10.835529
+    },
+    "st_metratio": {
+      "missing_count": 716,
+      "missing_percent": 11.099054
+    },
+    "st_rad": {
+      "missing_count": 332,
+      "missing_percent": 5.146489
+    },
+    "st_raderr1": {
+      "missing_count": 606,
+      "missing_percent": 9.393892
+    },
+    "st_raderr2": {
+      "missing_count": 607,
+      "missing_percent": 9.409394
+    },
+    "st_radlim": {
+      "missing_count": 332,
+      "missing_percent": 5.146489
+    },
+    "st_spectype": {
+      "missing_count": 4041,
+      "missing_percent": 62.641451
+    },
+    "st_teff": {
+      "missing_count": 307,
+      "missing_percent": 4.758952
+    },
+    "st_tefferr1": {
+      "missing_count": 614,
+      "missing_percent": 9.517904
+    },
+    "st_tefferr2": {
+      "missing_count": 614,
+      "missing_percent": 9.517904
+    },
+    "st_tefflim": {
+      "missing_count": 307,
+      "missing_percent": 4.758952
+    },
+    "sy_dist": {
+      "missing_count": 28,
+      "missing_percent": 0.434041
+    },
+    "sy_disterr1": {
+      "missing_count": 138,
+      "missing_percent": 2.139203
+    },
+    "sy_disterr2": {
+      "missing_count": 138,
+      "missing_percent": 2.139203
+    },
+    "sy_gaiamag": {
+      "missing_count": 358,
+      "missing_percent": 5.549527
+    },
+    "sy_gaiamagerr1": {
+      "missing_count": 358,
+      "missing_percent": 5.549527
+    },
+    "sy_gaiamagerr2": {
+      "missing_count": 358,
+      "missing_percent": 5.549527
+    },
+    "sy_kmag": {
+      "missing_count": 299,
+      "missing_percent": 4.63494
+    },
+    "sy_kmagerr1": {
+      "missing_count": 336,
+      "missing_percent": 5.208495
+    },
+    "sy_kmagerr2": {
+      "missing_count": 347,
+      "missing_percent": 5.379011
+    },
+    "sy_pnum": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "sy_snum": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    "sy_vmag": {
+      "missing_count": 313,
+      "missing_percent": 4.851961
+    },
+    "sy_vmagerr1": {
+      "missing_count": 321,
+      "missing_percent": 4.975973
+    },
+    "sy_vmagerr2": {
+      "missing_count": 326,
+      "missing_percent": 5.05348
+    },
+    "ttv_flag": {
+      "missing_count": 0,
+      "missing_percent": 0.0
+    }
+  },
+  "planned_feature_quality": {
+    "pl_eqt": {
+      "finite_numeric_count": 5911,
+      "inferred_dtype": "float64",
+      "iqr_extreme_review_flags": {
+        "above_upper_fence_count": 132,
+        "below_lower_fence_count": 0,
+        "highest_examples": [
+          {
+            "data_record_number": 2158,
+            "pl_name": "KOI-55 b",
+            "value": 7777.78
+          },
+          {
+            "data_record_number": 2159,
+            "pl_name": "KOI-55 c",
+            "value": 6910.74
+          },
+          {
+            "data_record_number": 1971,
+            "pl_name": "KELT-9 b",
+            "value": 3921.0
+          },
+          {
+            "data_record_number": 5556,
+            "pl_name": "TOI-2109 b",
+            "value": 3646.0
+          },
+          {
+            "data_record_number": 6276,
+            "pl_name": "WASP-189 b",
+            "value": 3353.0
+          }
+        ],
+        "lower_fence": -427.0375000000001,
+        "lowest_examples": [],
+        "rule": "below Q1 - 1.5*IQR or above Q3 + 1.5*IQR; review flag only, not removed",
+        "upper_fence": 2008.2225
+      },
+      "missing_count": 540,
+      "missing_percent": 8.370795,
+      "negative_count": 0,
+      "negative_infinity_count": 0,
+      "non_numeric_count": 0,
+      "non_numeric_examples": [],
+      "positive_count": 5911,
+      "positive_infinity_count": 0,
+      "records": 6451,
+      "statistics_finite_values_only": {
+        "iqr": 608.815,
+        "maximum": 7777.78,
+        "mean": 836.3771713754018,
+        "median": 758.0,
+        "minimum": 1.48,
+        "q1": 486.185,
+        "q3": 1095.0,
+        "quantile_profile": {
+          "p05": 183.09,
+          "p10": 288.0,
+          "p25": 486.185,
+          "p50": 758.0,
+          "p75": 1095.0,
+          "p90": 1513.0,
+          "p95": 1742.0,
+          "p99": 2248.9999999999964
+        },
+        "standard_deviation_sample": 495.7498512978208
+      },
+      "unit": "K",
+      "zero_count": 0
+    },
+    "pl_orbeccen": {
+      "finite_numeric_count": 5383,
+      "inferred_dtype": "float64",
+      "iqr_extreme_review_flags": {
+        "above_upper_fence_count": 671,
+        "below_lower_fence_count": 0,
+        "highest_examples": [
+          {
+            "data_record_number": 940,
+            "pl_name": "HD 20782 b",
+            "value": 0.95
+          },
+          {
+            "data_record_number": 1070,
+            "pl_name": "HD 28254 b",
+            "value": 0.95
+          },
+          {
+            "data_record_number": 1414,
+            "pl_name": "HIP 66074 b",
+            "value": 0.948
+          },
+          {
+            "data_record_number": 5236,
+            "pl_name": "TIC 241249530 b",
+            "value": 0.9412
+          },
+          {
+            "data_record_number": 1276,
+            "pl_name": "HD 80606 b",
+            "value": 0.93183
+          }
+        ],
+        "lower_fence": -0.135,
+        "lowest_examples": [],
+        "rule": "below Q1 - 1.5*IQR or above Q3 + 1.5*IQR; review flag only, not removed",
+        "upper_fence": 0.225
+      },
+      "missing_count": 1068,
+      "missing_percent": 16.555573,
+      "negative_count": 0,
+      "negative_infinity_count": 0,
+      "non_numeric_count": 0,
+      "non_numeric_examples": [],
+      "positive_count": 2227,
+      "positive_infinity_count": 0,
+      "records": 6451,
+      "statistics_finite_values_only": {
+        "iqr": 0.09,
+        "maximum": 0.95,
+        "mean": 0.07910657161434144,
+        "median": 0.0,
+        "minimum": 0.0,
+        "q1": 0.0,
+        "q3": 0.09,
+        "quantile_profile": {
+          "p05": 0.0,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p50": 0.0,
+          "p75": 0.09,
+          "p90": 0.27,
+          "p95": 0.4183999999999978,
+          "p99": 0.73
+        },
+        "standard_deviation_sample": 0.15243843244696953
+      },
+      "unit": "dimensionless",
+      "zero_count": 3156
+    },
+    "pl_orbper": {
+      "finite_numeric_count": 6097,
+      "inferred_dtype": "float64",
+      "iqr_extreme_review_flags": {
+        "above_upper_fence_count": 1057,
+        "below_lower_fence_count": 0,
+        "highest_examples": [
+          {
+            "data_record_number": 101,
+            "pl_name": "COCONUTS-2 b",
+            "value": 402000000.0
+          },
+          {
+            "data_record_number": 98,
+            "pl_name": "CFHTWIR-Oph 98 b",
+            "value": 8040000.0
+          },
+          {
+            "data_record_number": 5172,
+            "pl_name": "Oph 11 b",
+            "value": 7300000.0
+          },
+          {
+            "data_record_number": 6185,
+            "pl_name": "VHS J125601.92-125723.9 b",
+            "value": 5800000.0
+          },
+          {
+            "data_record_number": 6409,
+            "pl_name": "b Cen AB b",
+            "value": 1790000.0
+          }
+        ],
+        "lower_fence": -46.26946325,
+        "lowest_examples": [],
+        "rule": "below Q1 - 1.5*IQR or above Q3 + 1.5*IQR; review flag only, not removed",
+        "upper_fence": 88.55091475
+      },
+      "missing_count": 354,
+      "missing_percent": 5.487521,
+      "negative_count": 0,
+      "negative_infinity_count": 0,
+      "non_numeric_count": 0,
+      "non_numeric_examples": [],
+      "positive_count": 6097,
+      "positive_infinity_count": 0,
+      "records": 6451,
+      "statistics_finite_values_only": {
+        "iqr": 33.7050945,
+        "maximum": 402000000.0,
+        "mean": 70216.20095941318,
+        "median": 10.6413,
+        "minimum": 0.090706293,
+        "q1": 4.2881785,
+        "q3": 37.993273,
+        "quantile_profile": {
+          "p05": 1.5539671424,
+          "p10": 2.45402162,
+          "p25": 4.2881785,
+          "p50": 10.6413,
+          "p75": 37.993273,
+          "p90": 435.78000000000173,
+          "p95": 1536.8952959999983,
+          "p99": 13125.35306159997
+        },
+        "standard_deviation_sample": 5150759.013309942
+      },
+      "unit": "days",
+      "zero_count": 0
+    },
+    "pl_rade": {
+      "finite_numeric_count": 6401,
+      "inferred_dtype": "float64",
+      "iqr_extreme_review_flags": {
+        "above_upper_fence_count": 5,
+        "below_lower_fence_count": 0,
+        "highest_examples": [
+          {
+            "data_record_number": 6183,
+            "pl_name": "V2376 Ori b",
+            "value": 87.20586985
+          },
+          {
+            "data_record_number": 528,
+            "pl_name": "HD 100546 b",
+            "value": 77.3421
+          },
+          {
+            "data_record_number": 363,
+            "pl_name": "GQ Lup b",
+            "value": 33.6
+          },
+          {
+            "data_record_number": 143,
+            "pl_name": "DH Tau b",
+            "value": 30.2643
+          },
+          {
+            "data_record_number": 3497,
+            "pl_name": "Kepler-1979 b",
+            "value": 29.33
+          }
+        ],
+        "lower_fence": -13.225000000000001,
+        "lowest_examples": [],
+        "rule": "below Q1 - 1.5*IQR or above Q3 + 1.5*IQR; review flag only, not removed",
+        "upper_fence": 26.975
+      },
+      "missing_count": 50,
+      "missing_percent": 0.775074,
+      "negative_count": 0,
+      "negative_infinity_count": 0,
+      "non_numeric_count": 0,
+      "non_numeric_examples": [],
+      "positive_count": 6401,
+      "positive_infinity_count": 0,
+      "records": 6451,
+      "statistics_finite_values_only": {
+        "iqr": 10.05,
+        "maximum": 87.20586985,
+        "mean": 5.844660867205125,
+        "median": 2.86,
+        "minimum": 0.3098,
+        "q1": 1.85,
+        "q3": 11.9,
+        "quantile_profile": {
+          "p05": 1.08,
+          "p10": 1.28,
+          "p25": 1.85,
+          "p50": 2.86,
+          "p75": 11.9,
+          "p90": 13.6,
+          "p95": 14.3,
+          "p99": 18.27067
+        },
+        "standard_deviation_sample": 5.400441395165452
+      },
+      "unit": "Earth radii",
+      "zero_count": 0
+    }
+  },
+  "source": {
+    "comment_metadata_lines": [
+      "This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu",
+      "Fri Oct 30 13:47:46 2026",
+      "",
+      "COLUMN pl_name:        Planet Name",
+      "COLUMN hostname:       Host Name",
+      "COLUMN sy_snum:        Number of Stars",
+      "COLUMN sy_pnum:        Number of Planets",
+      "COLUMN discoverymethod: Discovery Method",
+      "COLUMN disc_year:      Discovery Year",
+      "COLUMN disc_facility:  Discovery Facility",
+      "COLUMN pl_controv_flag: Controversial Flag",
+      "COLUMN pl_orbper:      Orbital Period [days]",
+      "COLUMN pl_orbpererr1:  Orbital Period Upper Unc. [days]",
+      "COLUMN pl_orbpererr2:  Orbital Period Lower Unc. [days]",
+      "COLUMN pl_orbperlim:   Orbital Period Limit Flag",
+      "COLUMN pl_orbsmax:     Orbit Semi-Major Axis [au]",
+      "COLUMN pl_orbsmaxerr1: Orbit Semi-Major Axis Upper Unc. [au]",
+      "COLUMN pl_orbsmaxerr2: Orbit Semi-Major Axis Lower Unc. [au]",
+      "COLUMN pl_orbsmaxlim:  Orbit Semi-Major Axis Limit Flag",
+      "COLUMN pl_rade:        Planet Radius [Earth Radius]",
+      "COLUMN pl_radeerr1:    Planet Radius Upper Unc. [Earth Radius]",
+      "COLUMN pl_radeerr2:    Planet Radius Lower Unc. [Earth Radius]",
+      "COLUMN pl_radelim:     Planet Radius Limit Flag",
+      "COLUMN pl_radj:        Planet Radius [Jupiter Radius]",
+      "COLUMN pl_radjerr1:    Planet Radius Upper Unc. [Jupiter Radius]",
+      "COLUMN pl_radjerr2:    Planet Radius Lower Unc. [Jupiter Radius]",
+      "COLUMN pl_radjlim:     Planet Radius Limit Flag",
+      "COLUMN pl_bmasse:      Planet Mass or Mass*sin(i) [Earth Mass]",
+      "COLUMN pl_bmasseerr1:  Planet Mass or Mass*sin(i) [Earth Mass] Upper Unc.",
+      "COLUMN pl_bmasseerr2:  Planet Mass or Mass*sin(i) [Earth Mass] Lower Unc.",
+      "COLUMN pl_bmasselim:   Planet Mass or Mass*sin(i) [Earth Mass] Limit Flag",
+      "COLUMN pl_bmassj:      Planet Mass or Mass*sin(i) [Jupiter Mass]",
+      "COLUMN pl_bmassjerr1:  Planet Mass or Mass*sin(i) [Jupiter Mass] Upper Unc.",
+      "COLUMN pl_bmassjerr2:  Planet Mass or Mass*sin(i) [Jupiter Mass] Lower Unc.",
+      "COLUMN pl_bmassjlim:   Planet Mass or Mass*sin(i) [Jupiter Mass] Limit Flag",
+      "COLUMN pl_bmassprov:   Planet Mass or Mass*sin(i) Provenance",
+      "COLUMN pl_orbeccen:    Eccentricity",
+      "COLUMN pl_orbeccenerr1: Eccentricity Upper Unc.",
+      "COLUMN pl_orbeccenerr2: Eccentricity Lower Unc.",
+      "COLUMN pl_orbeccenlim: Eccentricity Limit Flag",
+      "COLUMN pl_insol:       Insolation Flux [Earth Flux]",
+      "COLUMN pl_insolerr1:   Insolation Flux Upper Unc. [Earth Flux]",
+      "COLUMN pl_insolerr2:   Insolation Flux Lower Unc. [Earth Flux]",
+      "COLUMN pl_insollim:    Insolation Flux Limit Flag",
+      "COLUMN pl_eqt:         Equilibrium Temperature [K]",
+      "COLUMN pl_eqterr1:     Equilibrium Temperature Upper Unc. [K]",
+      "COLUMN pl_eqterr2:     Equilibrium Temperature Lower Unc. [K]",
+      "COLUMN pl_eqtlim:      Equilibrium Temperature Limit Flag",
+      "COLUMN ttv_flag:       Data show Transit Timing Variations",
+      "COLUMN st_spectype:    Spectral Type",
+      "COLUMN st_teff:        Stellar Effective Temperature [K]",
+      "COLUMN st_tefferr1:    Stellar Effective Temperature Upper Unc. [K]",
+      "COLUMN st_tefferr2:    Stellar Effective Temperature Lower Unc. [K]",
+      "COLUMN st_tefflim:     Stellar Effective Temperature Limit Flag",
+      "COLUMN st_rad:         Stellar Radius [Solar Radius]",
+      "COLUMN st_raderr1:     Stellar Radius Upper Unc. [Solar Radius]",
+      "COLUMN st_raderr2:     Stellar Radius Lower Unc. [Solar Radius]",
+      "COLUMN st_radlim:      Stellar Radius Limit Flag",
+      "COLUMN st_mass:        Stellar Mass [Solar mass]",
+      "COLUMN st_masserr1:    Stellar Mass Upper Unc. [Solar mass]",
+      "COLUMN st_masserr2:    Stellar Mass Lower Unc. [Solar mass]",
+      "COLUMN st_masslim:     Stellar Mass Limit Flag",
+      "COLUMN st_met:         Stellar Metallicity [dex]",
+      "COLUMN st_meterr1:     Stellar Metallicity Upper Unc. [dex]",
+      "COLUMN st_meterr2:     Stellar Metallicity Lower Unc. [dex]",
+      "COLUMN st_metlim:      Stellar Metallicity Limit Flag",
+      "COLUMN st_metratio:    Stellar Metallicity Ratio",
+      "COLUMN st_logg:        Stellar Surface Gravity [log10(cm/s**2)]",
+      "COLUMN st_loggerr1:    Stellar Surface Gravity Upper Unc. [log10(cm/s**2)]",
+      "COLUMN st_loggerr2:    Stellar Surface Gravity Lower Unc. [log10(cm/s**2)]",
+      "COLUMN st_logglim:     Stellar Surface Gravity Limit Flag",
+      "COLUMN rastr:          RA [sexagesimal]",
+      "COLUMN ra:             RA [deg]",
+      "COLUMN decstr:         Dec [sexagesimal]",
+      "COLUMN dec:            Dec [deg]",
+      "COLUMN sy_dist:        Distance [pc]",
+      "COLUMN sy_disterr1:    Distance [pc] Upper Unc",
+      "COLUMN sy_disterr2:    Distance [pc] Lower Unc",
+      "COLUMN sy_vmag:        V (Johnson) Magnitude",
+      "COLUMN sy_vmagerr1:    V (Johnson) Magnitude Upper Unc",
+      "COLUMN sy_vmagerr2:    V (Johnson) Magnitude Lower Unc",
+      "COLUMN sy_kmag:        Ks (2MASS) Magnitude",
+      "COLUMN sy_kmagerr1:    Ks (2MASS) Magnitude Upper Unc",
+      "COLUMN sy_kmagerr2:    Ks (2MASS) Magnitude Lower Unc",
+      "COLUMN sy_gaiamag:     Gaia Magnitude",
+      "COLUMN sy_gaiamagerr1: Gaia Magnitude Upper Unc",
+      "COLUMN sy_gaiamagerr2: Gaia Magnitude Lower Unc",
+      ""
+    ],
+    "file_name": "PSCompPars_2026.10.30_13.47.46.csv",
+    "file_size_bytes": 4041771,
+    "path": "data/raw/PSCompPars_2026.10.30_13.47.46.csv",
+    "sha256_after_move": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30",
+    "sha256_before_move": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30",
+    "sha256_matches_before_move": true,
+    "snapshot_date": "2026-10-30"
+  }
+}

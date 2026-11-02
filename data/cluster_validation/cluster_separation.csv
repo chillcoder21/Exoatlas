@@ -1,0 +1,131 @@
+diagnostic,experiment,k,cluster_a,cluster_b,feature,distance_or_overlap,method,units
+standardized_centroid_distance,with_temp,2,0,1,ALL_INPUT_FEATURES,3.0920831342559292,Euclidean distance between centroids in the exact standardized K-means input space,
+binned_univariate_overlap_coefficient,with_temp,2,0,1,pl_rade,0.28472686905225197,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,2,0,1,pl_orbper,0.19173271775862116,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,2,0,1,pl_eqt,0.3991655770919601,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,2,0,1,pl_orbeccen,0.30238171231681377,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+standardized_centroid_distance,with_temp,3,0,1,ALL_INPUT_FEATURES,3.1433645446938261,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,3,0,2,ALL_INPUT_FEATURES,2.2504880138148984,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,3,1,2,ALL_INPUT_FEATURES,3.7241055371993301,Euclidean distance between centroids in the exact standardized K-means input space,
+binned_univariate_overlap_coefficient,with_temp,3,0,1,pl_rade,0.11967683433513882,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,3,0,1,pl_orbper,0.20638937899978643,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,3,0,1,pl_eqt,0.45444724695300348,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,3,0,1,pl_orbeccen,0.24737087914455846,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,3,0,2,pl_rade,0.28056785052795324,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,3,0,2,pl_orbper,0.4264250821167373,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,3,0,2,pl_eqt,0.30136202017334268,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,3,0,2,pl_orbeccen,0.77852645479817084,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,3,1,2,pl_rade,0.58833418490952805,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,3,1,2,pl_orbper,0.064312117743021729,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,3,1,2,pl_eqt,0.13791268008804924,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,3,1,2,pl_orbeccen,0.42903593786981342,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+standardized_centroid_distance,with_temp,4,0,1,ALL_INPUT_FEATURES,4.0846695144313152,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,4,0,2,ALL_INPUT_FEATURES,2.9025423003857136,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,4,0,3,ALL_INPUT_FEATURES,3.6542911097976414,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,4,1,2,ALL_INPUT_FEATURES,1.5710569800043774,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,4,1,3,ALL_INPUT_FEATURES,2.3133986868789567,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,4,2,3,ALL_INPUT_FEATURES,2.6046730709141572,Euclidean distance between centroids in the exact standardized K-means input space,
+binned_univariate_overlap_coefficient,with_temp,4,0,1,pl_rade,0.058598939963608175,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,4,0,1,pl_orbper,0.05409846713979978,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,4,0,1,pl_eqt,0.17533707149551514,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,4,0,1,pl_orbeccen,0.15287604255329917,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,4,0,2,pl_rade,0.13422764718915545,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,4,0,2,pl_orbper,0.23235375081408072,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,4,0,2,pl_eqt,0.46912535836337876,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,4,0,2,pl_orbeccen,0.27442410081844487,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,4,0,3,pl_rade,0.59932517214566627,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,4,0,3,pl_orbper,0.076337795693340704,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,4,0,3,pl_eqt,0.1561620148271245,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,4,0,3,pl_orbeccen,0.42942799637322138,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,4,1,2,pl_rade,0.52936453872298261,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,4,1,2,pl_orbper,0.28074835820688326,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,4,1,2,pl_eqt,0.21021264893804437,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,4,1,2,pl_orbeccen,0.86369935842073209,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,4,1,3,pl_rade,0.024696891577996191,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,4,1,3,pl_orbper,0.7479767321956925,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,4,1,3,pl_eqt,0.63310362544440035,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,4,1,3,pl_orbeccen,0.62979184369324304,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,4,2,3,pl_rade,0.11477254354618915,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,4,2,3,pl_orbper,0.23493714852613323,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,4,2,3,pl_eqt,0.11493092332109189,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,4,2,3,pl_orbeccen,0.75488585107681749,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+standardized_centroid_distance,with_temp,5,0,1,ALL_INPUT_FEATURES,2.6042613490497954,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,5,0,2,ALL_INPUT_FEATURES,4.3826930809096503,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,5,0,3,ALL_INPUT_FEATURES,2.3030510108835762,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,5,0,4,ALL_INPUT_FEATURES,3.3440185277235881,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,5,1,2,ALL_INPUT_FEATURES,3.9932465339126537,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,5,1,3,ALL_INPUT_FEATURES,1.5717562395278228,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,5,1,4,ALL_INPUT_FEATURES,2.538442716348261,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,5,2,3,ALL_INPUT_FEATURES,4.8351772866078937,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,5,2,4,ALL_INPUT_FEATURES,2.7410005998217848,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,with_temp,5,3,4,ALL_INPUT_FEATURES,3.810146115848144,Euclidean distance between centroids in the exact standardized K-means input space,
+binned_univariate_overlap_coefficient,with_temp,5,0,1,pl_rade,0.076021336577999643,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,0,1,pl_orbper,0.25871306974040859,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,0,1,pl_eqt,0.13785721657604416,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,0,1,pl_orbeccen,0.73320912345122424,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,5,0,2,pl_rade,0.55341921253570847,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,0,2,pl_orbper,0.16335939833500548,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,0,2,pl_eqt,0.20126597789708284,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,0,2,pl_orbeccen,0.032105138200672428,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,5,0,3,pl_rade,0.016097410604192355,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,0,3,pl_orbper,0.77062577065351423,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,0,3,pl_eqt,0.65683723797780513,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,0,3,pl_orbeccen,0.63378031237155774,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,5,0,4,pl_rade,0.60910061284207817,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,0,4,pl_orbper,0.015120451994037212,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,0,4,pl_eqt,0.15126709240480704,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,0,4,pl_orbeccen,0.56920146493181445,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,5,1,2,pl_rade,0.21052069937340956,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,1,2,pl_orbper,0.39412537280761761,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,1,2,pl_eqt,0.45930172107149703,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,1,2,pl_orbeccen,0.01145374449339207,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,5,1,3,pl_rade,0.54856461086637287,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,1,3,pl_orbper,0.28307268722466961,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,1,3,pl_eqt,0.16604258443465492,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,1,3,pl_orbeccen,0.89145007342143912,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,5,1,4,pl_rade,0.08432507068183312,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,1,4,pl_orbper,0.17143138930896182,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,1,4,pl_eqt,0.47937405483595241,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,1,4,pl_orbeccen,0.32599118942731276,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,5,2,3,pl_rade,0.14217908902691512,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,2,3,pl_orbper,0.14710144927536231,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,2,3,pl_eqt,0.20815734989648033,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,2,3,pl_orbeccen,0.0083333333333333332,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,5,2,4,pl_rade,0.75505701307128958,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,2,4,pl_orbper,0.73004542504866965,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,2,4,pl_eqt,0.78345230369889685,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,2,4,pl_orbeccen,0.03606192639288032,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,with_temp,5,3,4,pl_rade,0.030373134328358208,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,with_temp,5,3,4,pl_orbper,0.0041666666666666666,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,with_temp,5,3,4,pl_eqt,0.14287313432835819,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,with_temp,5,3,4,pl_orbeccen,0.22,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+standardized_centroid_distance,without_temp,4,0,1,ALL_INPUT_FEATURES,4.0886582500641104,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,without_temp,4,0,2,ALL_INPUT_FEATURES,2.8930275570249084,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,without_temp,4,0,3,ALL_INPUT_FEATURES,1.9553645752525175,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,without_temp,4,1,2,ALL_INPUT_FEATURES,2.7159502238067645,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,without_temp,4,1,3,ALL_INPUT_FEATURES,3.7097522381898589,Euclidean distance between centroids in the exact standardized K-means input space,
+standardized_centroid_distance,without_temp,4,2,3,ALL_INPUT_FEATURES,2.4898503183566048,Euclidean distance between centroids in the exact standardized K-means input space,
+binned_univariate_overlap_coefficient,without_temp,4,0,1,pl_rade,0.19601896716930192,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,without_temp,4,0,1,pl_orbper,0.40695012027939598,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,without_temp,4,0,1,pl_eqt,0.53283728511969541,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,without_temp,4,0,1,pl_orbeccen,0.011979634621144056,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,without_temp,4,0,2,pl_rade,0.053129586390538885,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,without_temp,4,0,2,pl_orbper,0.078250488943290952,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,without_temp,4,0,2,pl_eqt,0.39848493952194181,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,without_temp,4,0,2,pl_orbeccen,0.28460807917364739,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,without_temp,4,0,3,pl_rade,0.025329045885153136,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,without_temp,4,0,3,pl_orbper,0.58469223372897661,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,without_temp,4,0,3,pl_eqt,0.55512271244148104,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,without_temp,4,0,3,pl_orbeccen,0.67520215633423186,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,without_temp,4,1,2,pl_rade,0.73643523987175219,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,without_temp,4,1,2,pl_orbper,0.63645485102365651,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,without_temp,4,1,2,pl_eqt,0.76376771274679278,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,without_temp,4,1,2,pl_orbeccen,0.056831293925559717,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,without_temp,4,1,3,pl_rade,0.53648402531254824,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,without_temp,4,1,3,pl_orbper,0.28707825281679272,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,without_temp,4,1,3,pl_eqt,0.35949066213921899,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,without_temp,4,1,3,pl_orbeccen,0.032631578947368421,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless
+binned_univariate_overlap_coefficient,without_temp,4,2,3,pl_rade,0.58809036588360486,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,Earth radii
+binned_univariate_overlap_coefficient,without_temp,4,2,3,pl_orbper,0.017799787181795861,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,days
+binned_univariate_overlap_coefficient,without_temp,4,2,3,pl_eqt,0.22178930997789967,Sum of bin-wise minimum probability masses on shared physical-value bins; geometric bins,K
+binned_univariate_overlap_coefficient,without_temp,4,2,3,pl_orbeccen,0.58988622411393954,Sum of bin-wise minimum probability masses on shared physical-value bins; linear bins,dimensionless

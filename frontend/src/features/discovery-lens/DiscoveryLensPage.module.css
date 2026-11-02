@@ -1,0 +1,235 @@
+.page {
+  display: grid;
+  min-width: 0;
+  gap: clamp(3rem, 7vw, 6rem);
+  padding-block: clamp(2rem, 4vw, 3.7rem) 5rem;
+}
+
+.intro,
+.sectionHeading {
+  display: grid;
+  gap: 1rem;
+}
+
+.eyebrow,
+.sectionIndex,
+.chartHeading span {
+  margin: 0;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.eyebrow { display: flex; align-items: center; gap: 0.7rem; }
+.chapterNumber { color: var(--accent-blue-muted); }
+
+.title {
+  max-width: 58rem;
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(2.8rem, 7vw, 5.6rem);
+  font-weight: 540;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.title:focus { outline: none; }
+
+.lead {
+  max-width: 56rem;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.55vw, 1.25rem);
+  line-height: 1.7;
+}
+
+.boundaryNote,
+.contextNote {
+  max-width: 65rem;
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border-left: 2px solid var(--accent-amber);
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  line-height: 1.65;
+}
+
+.investigationNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+  padding-block: 0.8rem;
+  border-block: 1px solid var(--color-border);
+}
+
+.investigationNav a,
+.sourceNote a {
+  color: var(--accent-blue);
+  font-size: 0.72rem;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent-blue) 45%, transparent);
+  text-underline-offset: 0.23rem;
+}
+
+.investigationNav a { display: inline-flex; align-items: center; gap: 0.5rem; }
+.investigationNav a span { color: var(--color-subtle); font-family: var(--font-mono); font-size: 0.62rem; }
+
+.catalogueFacts {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.catalogueFacts > div {
+  min-width: 0;
+  padding: 0.75rem 0.8rem;
+  border-top: 1px solid var(--color-border-strong);
+  background: rgb(20 28 31 / 48%);
+}
+
+.catalogueFacts dt { color: var(--color-muted); font-size: 0.62rem; }
+.catalogueFacts dd { overflow-wrap: anywhere; margin: 0.4rem 0 0; color: var(--color-text); font-family: var(--font-mono); font-size: clamp(0.8rem, 1.3vw, 1.06rem); font-variant-numeric: tabular-nums; }
+
+.investigation {
+  display: grid;
+  min-width: 0;
+  gap: 1.4rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.sectionHeading { max-width: 60rem; gap: 0.55rem; }
+.sectionIndex { color: var(--accent-blue-muted); }
+.sectionHeading h2 { max-width: 54rem; margin: 0; color: var(--color-text); font-size: clamp(1.75rem, 4vw, 3rem); font-weight: 530; letter-spacing: -0.045em; line-height: 1.12; text-wrap: balance; }
+.sectionHeading > p:last-child { max-width: 53rem; margin: 0; color: var(--color-muted); font-size: 0.81rem; line-height: 1.7; }
+
+.methodFilters {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+  margin: 0;
+  padding: 1rem 0;
+  border: 0;
+  border-block: 1px solid var(--color-border);
+}
+
+.methodFilters legend { padding: 0 0.5rem 0 0; color: var(--color-text); font-size: 0.75rem; font-weight: 560; }
+.filterNote { margin: 0; color: var(--color-muted); font-size: 0.65rem; }
+.methodOptions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 0.25rem 0.8rem; }
+.methodOption { display: flex; min-width: 0; align-items: flex-start; gap: 0.55rem; padding: 0.28rem 0; color: var(--color-muted); font-size: 0.66rem; line-height: 1.45; cursor: pointer; }
+.methodOption input { flex: 0 0 auto; width: 1rem; height: 1rem; margin: 0.03rem 0 0; accent-color: var(--accent-teal); }
+.methodOption:focus-within { color: var(--color-text); }
+.textButton { justify-self: start; min-height: 2rem; padding: 0.35rem 0; border: 0; background: transparent; color: var(--accent-blue); font: inherit; font-size: 0.67rem; text-decoration: underline; text-underline-offset: 0.2rem; cursor: pointer; }
+
+.chartBlock,
+.facilityBlock {
+  display: grid;
+  min-width: 0;
+  gap: 0.55rem;
+  padding: clamp(0.75rem, 2vw, 1.25rem);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(140deg, rgb(20 28 31 / 84%), rgb(13 19 21 / 65%));
+}
+
+.facilityBlock { background: rgb(13 19 21 / 48%); }
+.chartHeading { display: flex; min-width: 0; justify-content: space-between; align-items: baseline; gap: 0.8rem; }
+.chartHeading h3 { margin: 0; color: var(--color-text); font-size: 0.83rem; font-weight: 560; }
+.chartHeading span { text-align: right; font-size: 0.57rem; letter-spacing: 0.06em; }
+.chart { display: block; width: 100%; max-width: 100%; height: auto; overflow: visible; }
+.chartAxis :global(path), .chartAxis :global(line) { stroke: var(--color-border-strong); }
+.chartAxis :global(text), .chartGrid :global(text) { fill: var(--color-muted); font-family: var(--font-mono); font-size: 10px; }
+.chartGrid :global(line) { stroke: var(--color-border); stroke-dasharray: 2 4; }
+.chartGrid :global(path) { stroke: var(--color-border-strong); }
+.chartCaption { margin: 0; color: var(--color-subtle); font-size: 0.64rem; line-height: 1.6; }
+.contextNote { max-width: none; }
+
+.facilityDetails,
+.dataDetails { border-top: 1px solid var(--color-border); padding-top: 0.7rem; color: var(--color-muted); font-size: 0.67rem; }
+.facilityDetails summary,
+.dataDetails summary { width: fit-content; color: var(--accent-blue); cursor: pointer; }
+.facilityDetails summary:focus-visible,
+.dataDetails summary:focus-visible { outline: 2px solid var(--accent-teal); outline-offset: 4px; }
+.facilityDetails ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.2rem 1.2rem; max-height: 24rem; overflow: auto; margin: 0.8rem 0 0; padding: 0; list-style: none; }
+.facilityDetails li { display: flex; min-width: 0; justify-content: space-between; gap: 0.5rem; padding: 0.38rem 0; border-bottom: 1px solid var(--color-border); }
+.facilityDetails li span { overflow-wrap: anywhere; }
+.facilityDetails li strong { flex: 0 0 auto; color: var(--color-text); font-family: var(--font-mono); font-size: 0.59rem; font-weight: 500; text-align: right; }
+
+.propertyPicker { display: grid; width: min(100%, 24rem); gap: 0.35rem; color: var(--color-muted); font-size: 0.65rem; }
+.propertyPicker select { min-height: 2.6rem; padding: 0.45rem 0.65rem; border: 1px solid var(--color-border-strong); border-radius: 0; background: var(--color-surface); color: var(--color-text); font: inherit; font-size: 0.72rem; }
+
+.tableScroll { width: 100%; min-width: 0; overflow-x: auto; border: 1px solid var(--color-border); background: rgb(13 19 21 / 48%); }
+.comparisonTable { width: 100%; min-width: 960px; border-collapse: collapse; font-size: 0.64rem; text-align: left; }
+.comparisonTable caption { padding: 0.75rem; color: var(--color-muted); line-height: 1.5; text-align: left; }
+.comparisonTable th,
+.comparisonTable td { padding: 0.65rem 0.75rem; border-top: 1px solid var(--color-border); vertical-align: top; }
+.comparisonTable thead th { color: var(--color-muted); font-size: 0.59rem; font-weight: 530; }
+.comparisonTable tbody th { color: var(--color-text); font-weight: 550; }
+.comparisonTable td { color: var(--color-text); font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.comparisonTable td span { color: var(--color-muted); font-family: var(--font-sans); font-size: 0.58rem; }
+.smallSample { display: block; width: fit-content; margin-top: 0.3rem; color: var(--accent-amber); font-family: var(--font-mono); font-size: 0.55rem; font-weight: 450; }
+.smallSampleNote { margin: 0; padding: 0.65rem 0.75rem; border-left: 2px solid var(--accent-amber); color: var(--color-muted); font-size: 0.64rem; line-height: 1.6; }
+.smallSampleNote strong { color: var(--accent-amber); font-weight: 600; }
+.chartAxisLabel { fill: var(--color-muted); font-family: var(--font-mono); font-size: 10px; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; color: var(--color-muted); font-size: 0.61rem; }
+.legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.legend i { display: inline-block; width: 0.8rem; height: 0.5rem; background: var(--accent-teal); }
+.legend i[data-kind="missing"] { background: var(--accent-coral); }
+
+.annualList { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.2rem 0.8rem; max-height: 16rem; overflow: auto; margin-top: 0.7rem; }
+.annualList div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 0.6rem; padding: 0.35rem; border-bottom: 1px solid var(--color-border); font-family: var(--font-mono); font-size: 0.59rem; }
+.annualList strong { color: var(--color-text); font-weight: 530; }
+.annualList span { color: var(--color-muted); }
+
+.inlineLoading { padding: 0.7rem 0; color: var(--color-muted); font-size: 0.67rem; }
+.loadState { display: grid; min-height: 55vh; align-content: center; color: var(--color-muted); font-size: 0.78rem; }
+.errorState { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem; border: 1px solid rgb(221 146 126 / 48%); color: var(--accent-coral); font-size: 0.69rem; }
+.errorState p { margin: 0.35rem 0 0; color: var(--color-muted); }
+.retryButton { flex: 0 0 auto; min-height: 2.25rem; padding: 0.4rem 0.65rem; border: 1px solid var(--color-border-strong); background: transparent; color: var(--color-text); cursor: pointer; }
+.retryButton:hover { border-color: var(--accent-coral); }
+
+.sourceNote { display: grid; gap: 0.5rem; padding-top: 1rem; border-top: 1px solid var(--color-border); }
+.sourceNote p { margin: 0; color: var(--color-muted); font-size: 0.64rem; line-height: 1.6; }
+.sourceNote strong { color: var(--color-text); font-weight: 550; }
+
+@media (max-width: 760px) {
+  .catalogueFacts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .chartHeading { align-items: flex-start; flex-direction: column; gap: 0.25rem; }
+  .chartHeading span { text-align: left; }
+  .facilityDetails ul { grid-template-columns: minmax(0, 1fr); }
+  .annualList { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .catalogueFacts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .investigationNav { gap: 0.6rem 0.9rem; }
+  .investigationNav a { font-size: 0.65rem; }
+  .methodOptions { grid-template-columns: minmax(0, 1fr); }
+  .errorState { align-items: flex-start; flex-direction: column; }
+  .annualList { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* The Discovery Lens unfolds as five linked investigations, not a card grid. */
+.page { gap: var(--chapter-space); padding-top: clamp(1.8rem, 3.5vw, 3rem); }
+.title { font-size: clamp(2.45rem, 5.1vw, 4.35rem); }
+.investigation { gap: 1.15rem; padding-top: 1.35rem; border-top: 1px solid var(--color-rule-strong); }
+.sectionIndex { color: var(--accent-blue-muted); }
+.sectionHeading h2 { font-size: clamp(1.55rem, 3.1vw, 2.45rem); }
+.catalogueFacts > div { padding: 0.65rem 0.3rem; border-top-color: var(--color-rule-strong); background: transparent; }
+.chartBlock,
+.facilityBlock { gap: 0.7rem; padding: 0.8rem 0; border: 0; border-top: 1px solid var(--color-rule); background: transparent; }
+.chartBlock .chartHeading h3,
+.facilityBlock .chartHeading h3 { font-size: 0.9rem; }
+.methodFilters { padding-block: 0.85rem; border-block-color: var(--color-rule); }
+.facilityDetails,
+.dataDetails { border-top-color: var(--color-rule); }
+.tableScroll { border-color: var(--color-rule-strong); background: transparent; }
+.comparisonTable th,
+.comparisonTable td { border-top-color: var(--color-rule); }
+.boundaryNote,
+.contextNote { border-left-color: var(--color-warning); }
+.sourceNote { border-top-color: var(--color-rule-strong); }

@@ -1,0 +1,169 @@
+{
+  "method": "Pearson chi-square test of independence; Cramer's V effect size.",
+  "overall_discovery_method_distribution_full_source": {
+    "Astrometry": 6,
+    "Disk Kinematics": 1,
+    "Eclipse Timing Variations": 17,
+    "Imaging": 98,
+    "Microlensing": 292,
+    "Orbital Brightness Modulation": 9,
+    "Pulsar Timing": 8,
+    "Pulsation Timing Variations": 2,
+    "Radial Velocity": 1204,
+    "Transit": 4785,
+    "Transit Timing Variations": 29
+  },
+  "with_temp": {
+    "sample_size": 5273,
+    "cluster_count": 4,
+    "discovery_method_categories": 9,
+    "observed_contingency_table": {
+      "0": {
+        "Astrometry": 3,
+        "Eclipse Timing Variations": 7,
+        "Imaging": 16,
+        "Microlensing": 1,
+        "Orbital Brightness Modulation": 0,
+        "Pulsation Timing Variations": 1,
+        "Radial Velocity": 727,
+        "Transit": 106,
+        "Transit Timing Variations": 10
+      },
+      "1": {
+        "Astrometry": 0,
+        "Eclipse Timing Variations": 0,
+        "Imaging": 0,
+        "Microlensing": 0,
+        "Orbital Brightness Modulation": 0,
+        "Pulsation Timing Variations": 0,
+        "Radial Velocity": 48,
+        "Transit": 1312,
+        "Transit Timing Variations": 1
+      },
+      "2": {
+        "Astrometry": 0,
+        "Eclipse Timing Variations": 0,
+        "Imaging": 0,
+        "Microlensing": 0,
+        "Orbital Brightness Modulation": 0,
+        "Pulsation Timing Variations": 0,
+        "Radial Velocity": 242,
+        "Transit": 1970,
+        "Transit Timing Variations": 11
+      },
+      "3": {
+        "Astrometry": 0,
+        "Eclipse Timing Variations": 0,
+        "Imaging": 0,
+        "Microlensing": 0,
+        "Orbital Brightness Modulation": 1,
+        "Pulsation Timing Variations": 0,
+        "Radial Velocity": 72,
+        "Transit": 745,
+        "Transit Timing Variations": 0
+      }
+    },
+    "chi_square_statistic": 2771.420241875866,
+    "degrees_of_freedom": 24,
+    "p_value": 0.0,
+    "p_value_underflowed_float64": true,
+    "p_value_display": "<5e-324 (float64 underflow)",
+    "cramers_v": 0.4185638136412218,
+    "expected_cell_count_minimum": 0.15512990707377206,
+    "expected_cell_count": 36,
+    "expected_cells_below_5": 25,
+    "expected_cells_below_5_percent": 69.44444444444444,
+    "expected_cells_below_1": 15,
+    "common_expected_count_heuristic_met": false,
+    "interpretation_note": "Pearson chi-square asymptotic assumptions are not met under the common heuristic; do not overinterpret the p-value. Rare discovery categories were retained, not pooled."
+  },
+  "without_temp": {
+    "sample_size": 5273,
+    "cluster_count": 4,
+    "discovery_method_categories": 9,
+    "observed_contingency_table": {
+      "0": {
+        "Astrometry": 0,
+        "Eclipse Timing Variations": 0,
+        "Imaging": 0,
+        "Microlensing": 0,
+        "Orbital Brightness Modulation": 0,
+        "Pulsation Timing Variations": 0,
+        "Radial Velocity": 244,
+        "Transit": 3087,
+        "Transit Timing Variations": 8
+      },
+      "1": {
+        "Astrometry": 3,
+        "Eclipse Timing Variations": 0,
+        "Imaging": 7,
+        "Microlensing": 0,
+        "Orbital Brightness Modulation": 0,
+        "Pulsation Timing Variations": 0,
+        "Radial Velocity": 225,
+        "Transit": 101,
+        "Transit Timing Variations": 5
+      },
+      "2": {
+        "Astrometry": 0,
+        "Eclipse Timing Variations": 7,
+        "Imaging": 9,
+        "Microlensing": 1,
+        "Orbital Brightness Modulation": 0,
+        "Pulsation Timing Variations": 1,
+        "Radial Velocity": 525,
+        "Transit": 96,
+        "Transit Timing Variations": 4
+      },
+      "3": {
+        "Astrometry": 0,
+        "Eclipse Timing Variations": 0,
+        "Imaging": 0,
+        "Microlensing": 0,
+        "Orbital Brightness Modulation": 1,
+        "Pulsation Timing Variations": 0,
+        "Radial Velocity": 95,
+        "Transit": 849,
+        "Transit Timing Variations": 5
+      }
+    },
+    "chi_square_statistic": 2568.5273956871865,
+    "degrees_of_freedom": 24,
+    "p_value": 0.0,
+    "p_value_underflowed_float64": true,
+    "p_value_display": "<5e-324 (float64 underflow)",
+    "cramers_v": 0.4029513249220997,
+    "expected_cell_count_minimum": 0.06466906884126683,
+    "expected_cell_count": 36,
+    "expected_cells_below_5": 26,
+    "expected_cells_below_5_percent": 72.22222222222221,
+    "expected_cells_below_1": 17,
+    "common_expected_count_heuristic_met": false,
+    "interpretation_note": "Pearson chi-square asymptotic assumptions are not met under the common heuristic; do not overinterpret the p-value. Rare discovery categories were retained, not pooled."
+  },
+  "overall_discovery_method_distribution_primary_cohort": {
+    "with_temp": {
+      "Astrometry": 3,
+      "Eclipse Timing Variations": 7,
+      "Imaging": 16,
+      "Microlensing": 1,
+      "Orbital Brightness Modulation": 1,
+      "Pulsation Timing Variations": 1,
+      "Radial Velocity": 1089,
+      "Transit": 4133,
+      "Transit Timing Variations": 22
+    },
+    "without_temp": {
+      "Astrometry": 3,
+      "Eclipse Timing Variations": 7,
+      "Imaging": 16,
+      "Microlensing": 1,
+      "Orbital Brightness Modulation": 1,
+      "Pulsation Timing Variations": 1,
+      "Radial Velocity": 1089,
+      "Transit": 4133,
+      "Transit Timing Variations": 22
+    }
+  },
+  "caveat": "Discovery techniques have different detection sensitivities and survey selection effects. The confirmed-planet catalogue is not an unbiased sample of all planetary systems. An association does not show that discovery method causes physical properties or cluster membership."
+}

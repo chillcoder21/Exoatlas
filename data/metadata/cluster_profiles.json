@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "model_id": "exoatlas-kmeans-with-temperature-k4",
+  "cohort_size": 5273,
+  "interpretation": "Cluster IDs are exploratory partition labels, not established astronomical types.",
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "planet_count": 871,
+      "percent_of_eligible_cohort": 16.51811113218282,
+      "physical_features": {
+        "pl_rade": {
+          "unit": "Earth radii",
+          "median": 12.8,
+          "q1": 12.11130365,
+          "q3": 13.5,
+          "iqr": 1.38869635
+        },
+        "pl_orbper": {
+          "unit": "days",
+          "median": 654.5,
+          "q1": 234.84,
+          "q3": 2145.5,
+          "iqr": 1910.66
+        },
+        "pl_eqt": {
+          "unit": "K",
+          "median": 294.0,
+          "q1": 166.315,
+          "q3": 497.265,
+          "iqr": 330.95
+        },
+        "pl_orbeccen": {
+          "unit": "dimensionless",
+          "median": 0.24,
+          "q1": 0.12,
+          "q3": 0.433,
+          "iqr": 0.313
+        }
+      },
+      "descriptive_summary": "In this assigned cohort, median measured radius is 12.8 Earth radii, median orbital period is 654.5 days, median equilibrium temperature is 294 K, and median eccentricity is 0.24. These are descriptive sample statistics."
+    },
+    {
+      "cluster_id": 1,
+      "planet_count": 1361,
+      "percent_of_eligible_cohort": 25.810733927555475,
+      "physical_features": {
+        "pl_rade": {
+          "unit": "Earth radii",
+          "median": 1.54,
+          "q1": 1.22,
+          "q3": 2.12,
+          "iqr": 0.9000000000000001
+        },
+        "pl_orbper": {
+          "unit": "days",
+          "median": 4.2881785,
+          "q1": 2.534756273,
+          "q3": 6.766589,
+          "iqr": 4.231832727
+        },
+        "pl_eqt": {
+          "unit": "K",
+          "median": 1086.0,
+          "q1": 938.34,
+          "q3": 1299.0,
+          "iqr": 360.65999999999997
+        },
+        "pl_orbeccen": {
+          "unit": "dimensionless",
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0
+        }
+      },
+      "descriptive_summary": "In this assigned cohort, median measured radius is 1.54 Earth radii, median orbital period is 4.28818 days, median equilibrium temperature is 1086 K, and median eccentricity is 0. These are descriptive sample statistics."
+    },
+    {
+      "cluster_id": 2,
+      "planet_count": 2223,
+      "percent_of_eligible_cohort": 42.1581642328845,
+      "physical_features": {
+        "pl_rade": {
+          "unit": "Earth radii",
+          "median": 2.57,
+          "q1": 2.0,
+          "q3": 3.25,
+          "iqr": 1.25
+        },
+        "pl_orbper": {
+          "unit": "days",
+          "median": 19.672266,
+          "q1": 11.555461820000001,
+          "q3": 40.6532132,
+          "iqr": 29.097751380000002
+        },
+        "pl_eqt": {
+          "unit": "K",
+          "median": 579.0,
+          "q1": 443.0,
+          "q3": 723.165,
+          "iqr": 280.16499999999996
+        },
+        "pl_orbeccen": {
+          "unit": "dimensionless",
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0205,
+          "iqr": 0.0205
+        }
+      },
+      "descriptive_summary": "In this assigned cohort, median measured radius is 2.57 Earth radii, median orbital period is 19.6723 days, median equilibrium temperature is 579 K, and median eccentricity is 0. These are descriptive sample statistics."
+    },
+    {
+      "cluster_id": 3,
+      "planet_count": 818,
+      "percent_of_eligible_cohort": 15.512990707377206,
+      "physical_features": {
+        "pl_rade": {
+          "unit": "Earth radii",
+          "median": 13.22662,
+          "q1": 11.28775,
+          "q3": 14.9303815725,
+          "iqr": 3.642631572499999
+        },
+        "pl_orbper": {
+          "unit": "days",
+          "median": 3.658184695,
+          "q1": 2.7834275,
+          "q3": 4.9419463,
+          "iqr": 2.1585187999999995
+        },
+        "pl_eqt": {
+          "unit": "K",
+          "median": 1430.0,
+          "q1": 1147.75,
+          "q3": 1672.5,
+          "iqr": 524.75
+        },
+        "pl_orbeccen": {
+          "unit": "dimensionless",
+          "median": 0.017,
+          "q1": 0.0,
+          "q3": 0.09,
+          "iqr": 0.09
+        }
+      },
+      "descriptive_summary": "In this assigned cohort, median measured radius is 13.2266 Earth radii, median orbital period is 3.65818 days, median equilibrium temperature is 1430 K, and median eccentricity is 0.017. These are descriptive sample statistics."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+k,observations,adjusted_rand_index,clusters_with_temp,clusters_without_temp,interpretation
+2,5273,0.87516249438596194,2,2,Partition sensitivity to feature configuration; not a causal effect.
+3,5273,0.72917926377645459,3,3,Partition sensitivity to feature configuration; not a causal effect.
+4,5273,0.4562698687107592,4,4,Partition sensitivity to feature configuration; not a causal effect.
+5,5273,0.60366695496962208,5,5,Partition sensitivity to feature configuration; not a causal effect.
+6,5273,0.61725688867188999,6,6,Partition sensitivity to feature configuration; not a causal effect.
+7,5273,0.50441105113535967,7,7,Partition sensitivity to feature configuration; not a causal effect.
+8,5273,0.46046563090586023,8,8,Partition sensitivity to feature configuration; not a causal effect.

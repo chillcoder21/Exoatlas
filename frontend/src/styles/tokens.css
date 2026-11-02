@@ -1,0 +1,56 @@
+:root {
+  color-scheme: dark;
+
+  --color-canvas: #101412;
+  --color-surface: #171d19;
+  --color-surface-raised: #202823;
+  --color-text: #f2efe7;
+  --color-muted: #b0b6ac;
+  --color-subtle: #89938a;
+  --color-border: #303a34;
+  --color-border-strong: #526057;
+
+  --accent-teal: #85c4aa;
+  --accent-amber: #d7b16d;
+  --accent-blue: #9ab8d0;
+  --accent-blue-muted: #839eaf;
+  --accent-coral: #d89178;
+
+  --color-observation: var(--accent-teal);
+  --color-interpretation: var(--accent-blue);
+  --color-warning: var(--accent-amber);
+  --color-missing: var(--accent-coral);
+  --color-unassigned: #a9b0a9;
+  --color-rule: var(--color-border);
+  --color-rule-strong: var(--color-border-strong);
+
+  --cluster-0: #76c8b8;
+  --cluster-1: #d6ad6f;
+  --cluster-2: #91b8e2;
+  --cluster-3: #dd927e;
+
+  --font-sans: Inter, "Segoe UI", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-editorial: var(--font-sans);
+  --font-body: var(--font-sans);
+  --font-measurement: var(--font-mono);
+  --font-metadata: var(--font-mono);
+
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4.5rem;
+  --space-8: 6rem;
+
+  --content-width: 76rem;
+  --page-gutter: clamp(1rem, 4vw, 3.5rem);
+  --chapter-space: clamp(3rem, 7vw, 6.25rem);
+  --reading-width: 68ch;
+  --motion-fast: 140ms;
+  --motion-medium: 200ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}

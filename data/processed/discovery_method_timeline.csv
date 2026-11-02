@@ -1,0 +1,386 @@
+discovery_year,discovery_method,planet_count,year_total,within_year_percentage,is_partial_year
+1992,Transit,0,2,0,False
+1992,Radial Velocity,0,2,0,False
+1992,Microlensing,0,2,0,False
+1992,Imaging,0,2,0,False
+1992,Transit Timing Variations,0,2,0,False
+1992,Eclipse Timing Variations,0,2,0,False
+1992,Orbital Brightness Modulation,0,2,0,False
+1992,Pulsar Timing,2,2,100,False
+1992,Astrometry,0,2,0,False
+1992,Pulsation Timing Variations,0,2,0,False
+1992,Disk Kinematics,0,2,0,False
+1993,Transit,0,0,0,False
+1993,Radial Velocity,0,0,0,False
+1993,Microlensing,0,0,0,False
+1993,Imaging,0,0,0,False
+1993,Transit Timing Variations,0,0,0,False
+1993,Eclipse Timing Variations,0,0,0,False
+1993,Orbital Brightness Modulation,0,0,0,False
+1993,Pulsar Timing,0,0,0,False
+1993,Astrometry,0,0,0,False
+1993,Pulsation Timing Variations,0,0,0,False
+1993,Disk Kinematics,0,0,0,False
+1994,Transit,0,1,0,False
+1994,Radial Velocity,0,1,0,False
+1994,Microlensing,0,1,0,False
+1994,Imaging,0,1,0,False
+1994,Transit Timing Variations,0,1,0,False
+1994,Eclipse Timing Variations,0,1,0,False
+1994,Orbital Brightness Modulation,0,1,0,False
+1994,Pulsar Timing,1,1,100,False
+1994,Astrometry,0,1,0,False
+1994,Pulsation Timing Variations,0,1,0,False
+1994,Disk Kinematics,0,1,0,False
+1995,Transit,0,1,0,False
+1995,Radial Velocity,1,1,100,False
+1995,Microlensing,0,1,0,False
+1995,Imaging,0,1,0,False
+1995,Transit Timing Variations,0,1,0,False
+1995,Eclipse Timing Variations,0,1,0,False
+1995,Orbital Brightness Modulation,0,1,0,False
+1995,Pulsar Timing,0,1,0,False
+1995,Astrometry,0,1,0,False
+1995,Pulsation Timing Variations,0,1,0,False
+1995,Disk Kinematics,0,1,0,False
+1996,Transit,0,6,0,False
+1996,Radial Velocity,6,6,100,False
+1996,Microlensing,0,6,0,False
+1996,Imaging,0,6,0,False
+1996,Transit Timing Variations,0,6,0,False
+1996,Eclipse Timing Variations,0,6,0,False
+1996,Orbital Brightness Modulation,0,6,0,False
+1996,Pulsar Timing,0,6,0,False
+1996,Astrometry,0,6,0,False
+1996,Pulsation Timing Variations,0,6,0,False
+1996,Disk Kinematics,0,6,0,False
+1997,Transit,0,1,0,False
+1997,Radial Velocity,1,1,100,False
+1997,Microlensing,0,1,0,False
+1997,Imaging,0,1,0,False
+1997,Transit Timing Variations,0,1,0,False
+1997,Eclipse Timing Variations,0,1,0,False
+1997,Orbital Brightness Modulation,0,1,0,False
+1997,Pulsar Timing,0,1,0,False
+1997,Astrometry,0,1,0,False
+1997,Pulsation Timing Variations,0,1,0,False
+1997,Disk Kinematics,0,1,0,False
+1998,Transit,0,6,0,False
+1998,Radial Velocity,6,6,100,False
+1998,Microlensing,0,6,0,False
+1998,Imaging,0,6,0,False
+1998,Transit Timing Variations,0,6,0,False
+1998,Eclipse Timing Variations,0,6,0,False
+1998,Orbital Brightness Modulation,0,6,0,False
+1998,Pulsar Timing,0,6,0,False
+1998,Astrometry,0,6,0,False
+1998,Pulsation Timing Variations,0,6,0,False
+1998,Disk Kinematics,0,6,0,False
+1999,Transit,0,13,0,False
+1999,Radial Velocity,13,13,100,False
+1999,Microlensing,0,13,0,False
+1999,Imaging,0,13,0,False
+1999,Transit Timing Variations,0,13,0,False
+1999,Eclipse Timing Variations,0,13,0,False
+1999,Orbital Brightness Modulation,0,13,0,False
+1999,Pulsar Timing,0,13,0,False
+1999,Astrometry,0,13,0,False
+1999,Pulsation Timing Variations,0,13,0,False
+1999,Disk Kinematics,0,13,0,False
+2000,Transit,0,16,0,False
+2000,Radial Velocity,16,16,100,False
+2000,Microlensing,0,16,0,False
+2000,Imaging,0,16,0,False
+2000,Transit Timing Variations,0,16,0,False
+2000,Eclipse Timing Variations,0,16,0,False
+2000,Orbital Brightness Modulation,0,16,0,False
+2000,Pulsar Timing,0,16,0,False
+2000,Astrometry,0,16,0,False
+2000,Pulsation Timing Variations,0,16,0,False
+2000,Disk Kinematics,0,16,0,False
+2001,Transit,0,12,0,False
+2001,Radial Velocity,12,12,100,False
+2001,Microlensing,0,12,0,False
+2001,Imaging,0,12,0,False
+2001,Transit Timing Variations,0,12,0,False
+2001,Eclipse Timing Variations,0,12,0,False
+2001,Orbital Brightness Modulation,0,12,0,False
+2001,Pulsar Timing,0,12,0,False
+2001,Astrometry,0,12,0,False
+2001,Pulsation Timing Variations,0,12,0,False
+2001,Disk Kinematics,0,12,0,False
+2002,Transit,1,29,3.44827586206897,False
+2002,Radial Velocity,28,29,96.551724137931,False
+2002,Microlensing,0,29,0,False
+2002,Imaging,0,29,0,False
+2002,Transit Timing Variations,0,29,0,False
+2002,Eclipse Timing Variations,0,29,0,False
+2002,Orbital Brightness Modulation,0,29,0,False
+2002,Pulsar Timing,0,29,0,False
+2002,Astrometry,0,29,0,False
+2002,Pulsation Timing Variations,0,29,0,False
+2002,Disk Kinematics,0,29,0,False
+2003,Transit,0,22,0,False
+2003,Radial Velocity,21,22,95.4545454545455,False
+2003,Microlensing,0,22,0,False
+2003,Imaging,0,22,0,False
+2003,Transit Timing Variations,0,22,0,False
+2003,Eclipse Timing Variations,0,22,0,False
+2003,Orbital Brightness Modulation,0,22,0,False
+2003,Pulsar Timing,1,22,4.54545454545455,False
+2003,Astrometry,0,22,0,False
+2003,Pulsation Timing Variations,0,22,0,False
+2003,Disk Kinematics,0,22,0,False
+2004,Transit,5,27,18.5185185185185,False
+2004,Radial Velocity,18,27,66.6666666666667,False
+2004,Microlensing,1,27,3.7037037037037,False
+2004,Imaging,3,27,11.1111111111111,False
+2004,Transit Timing Variations,0,27,0,False
+2004,Eclipse Timing Variations,0,27,0,False
+2004,Orbital Brightness Modulation,0,27,0,False
+2004,Pulsar Timing,0,27,0,False
+2004,Astrometry,0,27,0,False
+2004,Pulsation Timing Variations,0,27,0,False
+2004,Disk Kinematics,0,27,0,False
+2005,Transit,0,36,0,False
+2005,Radial Velocity,33,36,91.6666666666667,False
+2005,Microlensing,2,36,5.55555555555556,False
+2005,Imaging,1,36,2.77777777777778,False
+2005,Transit Timing Variations,0,36,0,False
+2005,Eclipse Timing Variations,0,36,0,False
+2005,Orbital Brightness Modulation,0,36,0,False
+2005,Pulsar Timing,0,36,0,False
+2005,Astrometry,0,36,0,False
+2005,Pulsation Timing Variations,0,36,0,False
+2005,Disk Kinematics,0,36,0,False
+2006,Transit,5,32,15.625,False
+2006,Radial Velocity,21,32,65.625,False
+2006,Microlensing,1,32,3.125,False
+2006,Imaging,5,32,15.625,False
+2006,Transit Timing Variations,0,32,0,False
+2006,Eclipse Timing Variations,0,32,0,False
+2006,Orbital Brightness Modulation,0,32,0,False
+2006,Pulsar Timing,0,32,0,False
+2006,Astrometry,0,32,0,False
+2006,Pulsation Timing Variations,0,32,0,False
+2006,Disk Kinematics,0,32,0,False
+2007,Transit,16,52,30.7692307692308,False
+2007,Radial Velocity,34,52,65.3846153846154,False
+2007,Microlensing,0,52,0,False
+2007,Imaging,1,52,1.92307692307692,False
+2007,Transit Timing Variations,0,52,0,False
+2007,Eclipse Timing Variations,0,52,0,False
+2007,Orbital Brightness Modulation,0,52,0,False
+2007,Pulsar Timing,0,52,0,False
+2007,Astrometry,0,52,0,False
+2007,Pulsation Timing Variations,1,52,1.92307692307692,False
+2007,Disk Kinematics,0,52,0,False
+2008,Transit,15,62,24.1935483870968,False
+2008,Radial Velocity,36,62,58.0645161290323,False
+2008,Microlensing,4,62,6.45161290322581,False
+2008,Imaging,7,62,11.2903225806452,False
+2008,Transit Timing Variations,0,62,0,False
+2008,Eclipse Timing Variations,0,62,0,False
+2008,Orbital Brightness Modulation,0,62,0,False
+2008,Pulsar Timing,0,62,0,False
+2008,Astrometry,0,62,0,False
+2008,Pulsation Timing Variations,0,62,0,False
+2008,Disk Kinematics,0,62,0,False
+2009,Transit,18,87,20.6896551724138,False
+2009,Radial Velocity,66,87,75.8620689655172,False
+2009,Microlensing,2,87,2.29885057471264,False
+2009,Imaging,0,87,0,False
+2009,Transit Timing Variations,0,87,0,False
+2009,Eclipse Timing Variations,1,87,1.14942528735632,False
+2009,Orbital Brightness Modulation,0,87,0,False
+2009,Pulsar Timing,0,87,0,False
+2009,Astrometry,0,87,0,False
+2009,Pulsation Timing Variations,0,87,0,False
+2009,Disk Kinematics,0,87,0,False
+2010,Transit,46,93,49.4623655913978,False
+2010,Radial Velocity,37,93,39.7849462365591,False
+2010,Microlensing,2,93,2.1505376344086,False
+2010,Imaging,6,93,6.45161290322581,False
+2010,Transit Timing Variations,0,93,0,False
+2010,Eclipse Timing Variations,2,93,2.1505376344086,False
+2010,Orbital Brightness Modulation,0,93,0,False
+2010,Pulsar Timing,0,93,0,False
+2010,Astrometry,0,93,0,False
+2010,Pulsation Timing Variations,0,93,0,False
+2010,Disk Kinematics,0,93,0,False
+2011,Transit,80,141,56.7375886524823,False
+2011,Radial Velocity,49,141,34.7517730496454,False
+2011,Microlensing,1,141,0.709219858156028,False
+2011,Imaging,2,141,1.41843971631206,False
+2011,Transit Timing Variations,1,141,0.709219858156028,False
+2011,Eclipse Timing Variations,5,141,3.54609929078014,False
+2011,Orbital Brightness Modulation,2,141,1.41843971631206,False
+2011,Pulsar Timing,1,141,0.709219858156028,False
+2011,Astrometry,0,141,0,False
+2011,Pulsation Timing Variations,0,141,0,False
+2011,Disk Kinematics,0,141,0,False
+2012,Transit,94,144,65.2777777777778,False
+2012,Radial Velocity,39,144,27.0833333333333,False
+2012,Microlensing,7,144,4.86111111111111,False
+2012,Imaging,2,144,1.38888888888889,False
+2012,Transit Timing Variations,1,144,0.694444444444444,False
+2012,Eclipse Timing Variations,1,144,0.694444444444444,False
+2012,Orbital Brightness Modulation,0,144,0,False
+2012,Pulsar Timing,0,144,0,False
+2012,Astrometry,0,144,0,False
+2012,Pulsation Timing Variations,0,144,0,False
+2012,Disk Kinematics,0,144,0,False
+2013,Transit,79,128,61.71875,False
+2013,Radial Velocity,34,128,26.5625,False
+2013,Microlensing,5,128,3.90625,False
+2013,Imaging,7,128,5.46875,False
+2013,Transit Timing Variations,1,128,0.78125,False
+2013,Eclipse Timing Variations,0,128,0,False
+2013,Orbital Brightness Modulation,1,128,0.78125,False
+2013,Pulsar Timing,0,128,0,False
+2013,Astrometry,1,128,0.78125,False
+2013,Pulsation Timing Variations,0,128,0,False
+2013,Disk Kinematics,0,128,0,False
+2014,Transit,810,872,92.8899082568807,False
+2014,Radial Velocity,48,872,5.5045871559633,False
+2014,Microlensing,6,872,0.688073394495413,False
+2014,Imaging,2,872,0.229357798165138,False
+2014,Transit Timing Variations,3,872,0.344036697247706,False
+2014,Eclipse Timing Variations,0,872,0,False
+2014,Orbital Brightness Modulation,3,872,0.344036697247706,False
+2014,Pulsar Timing,0,872,0,False
+2014,Astrometry,0,872,0,False
+2014,Pulsation Timing Variations,0,872,0,False
+2014,Disk Kinematics,0,872,0,False
+2015,Transit,99,155,63.8709677419355,False
+2015,Radial Velocity,46,155,29.6774193548387,False
+2015,Microlensing,4,155,2.58064516129032,False
+2015,Imaging,5,155,3.2258064516129,False
+2015,Transit Timing Variations,0,155,0,False
+2015,Eclipse Timing Variations,1,155,0.645161290322581,False
+2015,Orbital Brightness Modulation,0,155,0,False
+2015,Pulsar Timing,0,155,0,False
+2015,Astrometry,0,155,0,False
+2015,Pulsation Timing Variations,0,155,0,False
+2015,Disk Kinematics,0,155,0,False
+2016,Transit,1432,1504,95.2127659574468,False
+2016,Radial Velocity,58,1504,3.8563829787234,False
+2016,Microlensing,10,1504,0.664893617021277,False
+2016,Imaging,2,1504,0.132978723404255,False
+2016,Transit Timing Variations,1,1504,0.0664893617021277,False
+2016,Eclipse Timing Variations,0,1504,0,False
+2016,Orbital Brightness Modulation,0,1504,0,False
+2016,Pulsar Timing,0,1504,0,False
+2016,Astrometry,0,1504,0,False
+2016,Pulsation Timing Variations,1,1504,0.0664893617021277,False
+2016,Disk Kinematics,0,1504,0,False
+2017,Transit,87,152,57.2368421052632,False
+2017,Radial Velocity,48,152,31.5789473684211,False
+2017,Microlensing,10,152,6.57894736842105,False
+2017,Imaging,3,152,1.97368421052632,False
+2017,Transit Timing Variations,1,152,0.657894736842105,False
+2017,Eclipse Timing Variations,1,152,0.657894736842105,False
+2017,Orbital Brightness Modulation,0,152,0,False
+2017,Pulsar Timing,2,152,1.31578947368421,False
+2017,Astrometry,0,152,0,False
+2017,Pulsation Timing Variations,0,152,0,False
+2017,Disk Kinematics,0,152,0,False
+2018,Transit,244,308,79.2207792207792,False
+2018,Radial Velocity,38,308,12.3376623376623,False
+2018,Microlensing,21,308,6.81818181818182,False
+2018,Imaging,3,308,0.974025974025974,False
+2018,Transit Timing Variations,1,308,0.324675324675325,False
+2018,Eclipse Timing Variations,1,308,0.324675324675325,False
+2018,Orbital Brightness Modulation,0,308,0,False
+2018,Pulsar Timing,0,308,0,False
+2018,Astrometry,0,308,0,False
+2018,Pulsation Timing Variations,0,308,0,False
+2018,Disk Kinematics,0,308,0,False
+2019,Transit,107,194,55.1546391752577,False
+2019,Radial Velocity,65,194,33.5051546391753,False
+2019,Microlensing,14,194,7.21649484536082,False
+2019,Imaging,4,194,2.06185567010309,False
+2019,Transit Timing Variations,1,194,0.515463917525773,False
+2019,Eclipse Timing Variations,2,194,1.03092783505155,False
+2019,Orbital Brightness Modulation,0,194,0,False
+2019,Pulsar Timing,0,194,0,False
+2019,Astrometry,0,194,0,False
+2019,Pulsation Timing Variations,0,194,0,False
+2019,Disk Kinematics,1,194,0.515463917525773,False
+2020,Transit,164,234,70.0854700854701,False
+2020,Radial Velocity,46,234,19.6581196581197,False
+2020,Microlensing,20,234,8.54700854700855,False
+2020,Imaging,3,234,1.28205128205128,False
+2020,Transit Timing Variations,1,234,0.427350427350427,False
+2020,Eclipse Timing Variations,0,234,0,False
+2020,Orbital Brightness Modulation,0,234,0,False
+2020,Pulsar Timing,0,234,0,False
+2020,Astrometry,0,234,0,False
+2020,Pulsation Timing Variations,0,234,0,False
+2020,Disk Kinematics,0,234,0,False
+2021,Transit,457,564,81.0283687943262,False
+2021,Radial Velocity,77,564,13.6524822695035,False
+2021,Microlensing,21,564,3.72340425531915,False
+2021,Imaging,5,564,0.886524822695036,False
+2021,Transit Timing Variations,1,564,0.177304964539007,False
+2021,Eclipse Timing Variations,0,564,0,False
+2021,Orbital Brightness Modulation,3,564,0.531914893617021,False
+2021,Pulsar Timing,0,564,0,False
+2021,Astrometry,0,564,0,False
+2021,Pulsation Timing Variations,0,564,0,False
+2021,Disk Kinematics,0,564,0,False
+2022,Transit,192,367,52.3160762942779,False
+2022,Radial Velocity,115,367,31.3351498637602,False
+2022,Microlensing,51,367,13.8964577656676,False
+2022,Imaging,4,367,1.08991825613079,False
+2022,Transit Timing Variations,2,367,0.544959128065395,False
+2022,Eclipse Timing Variations,2,367,0.544959128065395,False
+2022,Orbital Brightness Modulation,0,367,0,False
+2022,Pulsar Timing,0,367,0,False
+2022,Astrometry,1,367,0.272479564032698,False
+2022,Pulsation Timing Variations,0,367,0,False
+2022,Disk Kinematics,0,367,0,False
+2023,Transit,225,323,69.6594427244582,False
+2023,Radial Velocity,56,323,17.3374613003096,False
+2023,Microlensing,30,323,9.28792569659443,False
+2023,Imaging,7,323,2.1671826625387,False
+2023,Transit Timing Variations,3,323,0.928792569659443,False
+2023,Eclipse Timing Variations,1,323,0.309597523219814,False
+2023,Orbital Brightness Modulation,0,323,0,False
+2023,Pulsar Timing,0,323,0,False
+2023,Astrometry,1,323,0.309597523219814,False
+2023,Pulsation Timing Variations,0,323,0,False
+2023,Disk Kinematics,0,323,0,False
+2024,Transit,187,260,71.9230769230769,False
+2024,Radial Velocity,29,260,11.1538461538462,False
+2024,Microlensing,28,260,10.7692307692308,False
+2024,Imaging,11,260,4.23076923076923,False
+2024,Transit Timing Variations,4,260,1.53846153846154,False
+2024,Eclipse Timing Variations,0,260,0,False
+2024,Orbital Brightness Modulation,0,260,0,False
+2024,Pulsar Timing,1,260,0.384615384615385,False
+2024,Astrometry,0,260,0,False
+2024,Pulsation Timing Variations,0,260,0,False
+2024,Disk Kinematics,0,260,0,False
+2025,Transit,144,246,58.5365853658537,False
+2025,Radial Velocity,62,246,25.2032520325203,False
+2025,Microlensing,23,246,9.34959349593496,False
+2025,Imaging,8,246,3.2520325203252,False
+2025,Transit Timing Variations,6,246,2.4390243902439,False
+2025,Eclipse Timing Variations,0,246,0,False
+2025,Orbital Brightness Modulation,0,246,0,False
+2025,Pulsar Timing,0,246,0,False
+2025,Astrometry,3,246,1.21951219512195,False
+2025,Pulsation Timing Variations,0,246,0,False
+2025,Disk Kinematics,0,246,0,False
+2026,Transit,278,361,77.0083102493075,True
+2026,Radial Velocity,45,361,12.4653739612188,True
+2026,Microlensing,29,361,8.03324099722992,True
+2026,Imaging,7,361,1.93905817174515,True
+2026,Transit Timing Variations,2,361,0.554016620498615,True
+2026,Eclipse Timing Variations,0,361,0,True
+2026,Orbital Brightness Modulation,0,361,0,True
+2026,Pulsar Timing,0,361,0,True
+2026,Astrometry,0,361,0,True
+2026,Pulsation Timing Variations,0,361,0,True
+2026,Disk Kinematics,0,361,0,True

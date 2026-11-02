@@ -1,0 +1,425 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4.5rem, 10vw, 8.5rem);
+  padding-block: clamp(2.2rem, 4.5vw, 4rem) 5rem;
+}
+
+.loadState {
+  display: grid;
+  min-height: min(66vh, 40rem);
+  align-content: center;
+  justify-items: start;
+  gap: 1rem;
+  color: var(--color-muted);
+}
+
+.eyebrow,
+.sectionEyebrow,
+.panelKicker,
+.asideIndex {
+  margin: 0;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.chapterNumber { color: var(--accent-teal); }
+
+.intro { display: grid; gap: 1.65rem; }
+
+.introCopy {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.95fr) minmax(19rem, 1.05fr);
+  align-items: end;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+
+.kicker {
+  margin: 0 0 0.8rem;
+  color: var(--accent-amber);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pageTitle {
+  max-width: 49rem;
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(2.7rem, 7vw, 5.9rem);
+  font-weight: 540;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.pageTitle:focus { outline: none; }
+
+.description,
+.sectionLead {
+  max-width: 43rem;
+  margin: 0 0 0.2rem;
+  color: var(--color-muted);
+  font-size: clamp(0.96rem, 1.3vw, 1.1rem);
+  line-height: 1.75;
+}
+
+.heroMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 2.2rem;
+  padding-block: 1.1rem;
+  border-block: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.77rem;
+}
+
+.heroMeta strong {
+  margin-right: 0.32rem;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.sectionNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.3rem;
+}
+
+.sectionNav a,
+.sectionNav a:visited {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  text-decoration-color: var(--color-border-strong);
+  text-underline-offset: 0.25rem;
+}
+
+.sectionNav a:hover { color: var(--color-text); }
+
+.explorerPrompt { margin: -0.75rem 0 0; color: var(--color-muted); font-size: 0.72rem; }
+.explorerPrompt a { color: var(--accent-blue); text-decoration: underline; text-underline-offset: 0.2rem; }
+
+.chapter {
+  display: grid;
+  gap: 1.65rem;
+  scroll-margin-top: 2rem;
+}
+
+.profileChapter {
+  padding: clamp(1.2rem, 3vw, 2.3rem);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(145deg, rgb(20 28 31 / 78%), rgb(13 19 21 / 18%) 72%);
+}
+
+.temperatureChapter {
+  padding: clamp(1.2rem, 3vw, 2.3rem);
+  border-block: 1px solid var(--color-border);
+  background: radial-gradient(ellipse at 90% 5%, rgb(118 200 184 / 7%), transparent 44%);
+}
+
+.chapterHeading {
+  display: grid;
+  justify-items: start;
+  gap: 0.55rem;
+}
+
+.sectionEyebrow {
+  margin-bottom: 0.15rem;
+  color: var(--accent-teal);
+}
+
+.sectionTitle {
+  max-width: 55rem;
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(1.7rem, 4vw, 3.05rem);
+  font-weight: 530;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.sectionLead {
+  max-width: 49rem;
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+}
+
+.populationLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(14rem, 0.5fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+}
+
+.populationChartWrap { min-width: 0; }
+.chart { display: block; width: 100%; overflow: visible; }
+.gridLine { stroke: var(--color-border); stroke-width: 1; }
+.axisText { fill: var(--color-muted); font-family: var(--font-mono); font-size: 10px; }
+.rowLabel { fill: var(--color-text); font-family: var(--font-mono); font-size: 11px; }
+.barLabel { fill: var(--color-text); font-family: var(--font-mono); font-size: 10px; }
+.chartCount { fill: var(--color-muted); font-family: var(--font-mono); font-size: 9px; }
+
+.chartNote {
+  max-width: 52rem;
+  margin: 0.35rem 0 0;
+  color: var(--color-subtle);
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+.populationAside {
+  padding: 0.3rem 0 0.3rem 1.25rem;
+  border-left: 1px solid var(--accent-amber);
+}
+
+.asideIndex { color: var(--accent-amber); font-size: 0.61rem; }
+.populationAside p { margin: 0.65rem 0 0; color: var(--color-muted); font-size: 0.8rem; line-height: 1.7; }
+
+.profileControls {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 0.5rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.controlTitle { margin: 0 0 0.55rem; color: var(--color-muted); font-size: 0.7rem; }
+.clusterToggles { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+.clusterToggle,
+.resetButton,
+.actionButton {
+  display: inline-flex;
+  min-height: 2.4rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 1px;
+  background: transparent;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.69rem;
+  cursor: pointer;
+}
+
+.clusterToggle:hover,
+.clusterToggle:focus-visible,
+.resetButton:hover,
+.resetButton:focus-visible,
+.actionButton:hover,
+.actionButton:focus-visible {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.clusterToggle[data-selected="true"] {
+  border-color: var(--cluster-color);
+  color: var(--color-text);
+}
+
+.clusterDot,
+.tableClusterDot {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--cluster-color);
+}
+
+.resetButton { border-style: dashed; }
+.controlHint { max-width: 18rem; margin: 0; color: var(--color-subtle); font-size: 0.68rem; line-height: 1.55; text-align: right; }
+
+.featureChartGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem 2rem;
+}
+
+.featureChart {
+  min-width: 0;
+  margin: 0;
+  padding-block: 0.6rem 0.3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.featureChart figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding-inline: 0.4rem;
+}
+
+.featureName { color: var(--color-text); font-size: 0.8rem; font-weight: 540; }
+.featureUnit { color: var(--color-subtle); font-family: var(--font-mono); font-size: 0.59rem; text-align: right; }
+
+.dataDetails {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dataDetails summary {
+  width: fit-content;
+  padding: 0.85rem 0;
+  color: var(--color-text);
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+
+.dataDetails summary:hover { color: var(--accent-teal); }
+.detailsIntro { max-width: 55rem; margin: 0 0 1rem; color: var(--color-muted); font-size: 0.75rem; line-height: 1.65; }
+.tableScroller { max-width: 100%; overflow-x: auto; }
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--color-muted);
+  font-size: 0.68rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.dataTable caption { padding: 0.3rem 0 0.7rem; color: var(--color-subtle); font-size: 0.67rem; text-align: left; }
+.dataTable th,
+.dataTable td { min-width: 8.5rem; padding: 0.65rem 0.8rem; border-top: 1px solid var(--color-border); vertical-align: top; }
+.dataTable th:first-child,
+.dataTable td:first-child { min-width: 5rem; padding-left: 0; }
+.dataTable thead th { color: var(--color-text); font-weight: 500; }
+.dataTable thead th span { display: block; color: var(--color-subtle); font-size: 0.61rem; font-weight: 400; }
+.dataTable tbody th { color: var(--color-text); font-family: var(--font-mono); font-weight: 500; }
+.dataTable tbody td { font-family: var(--font-mono); font-size: 0.63rem; font-variant-numeric: tabular-nums; }
+.dataTable tbody td span { color: var(--color-subtle); }
+.tableClusterDot { width: 0.48rem; height: 0.48rem; margin-right: 0.4rem; vertical-align: 0.03rem; }
+
+.profileDescription {
+  max-width: 52rem;
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent-teal);
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.scienceNote { display: flex; align-items: flex-start; gap: 0.8rem; max-width: 56rem; margin: 0; color: var(--color-subtle); font-size: 0.7rem; line-height: 1.65; }
+.noteRule { width: 1.5rem; height: 1px; flex: 0 0 auto; margin-top: 0.57rem; background: var(--accent-amber); }
+
+.overlapGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 4vw, 3rem); }
+.chartPanel { min-width: 0; padding-top: 1rem; border-top: 1px solid var(--color-border); }
+.panelHeading { display: grid; gap: 0.42rem; margin-bottom: 0.7rem; }
+.panelKicker { color: var(--accent-amber); font-size: 0.61rem; }
+.panelHeading h3 { margin: 0; color: var(--color-text); font-size: 1.1rem; font-weight: 530; letter-spacing: -0.025em; }
+.panelHeading p { max-width: 38rem; margin: 0; color: var(--color-muted); font-size: 0.72rem; line-height: 1.6; }
+
+.overlapCallout {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 1.3rem;
+  max-width: 57rem;
+  padding: 1.2rem 1.3rem;
+  border-left: 2px solid var(--accent-amber);
+  background: rgb(214 173 111 / 5%);
+}
+
+.overlapValue { color: var(--accent-amber); font-family: var(--font-mono); font-size: clamp(2.1rem, 4vw, 3.2rem); letter-spacing: -0.07em; line-height: 1; }
+.overlapCallout p { margin: 0.45rem 0; color: var(--color-muted); font-size: 0.76rem; line-height: 1.65; }
+.overlapCallout .panelKicker { margin: 0; }
+.methodNote { color: var(--color-subtle); font-family: var(--font-mono); font-size: 0.6rem; line-height: 1.6; }
+
+.experimentMetrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-block: 1px solid var(--color-border); }
+.experimentColumn,
+.changeMetric { min-width: 0; padding: 1.15rem 1.35rem; border-left: 1px solid var(--color-border); }
+.experimentColumn:first-child { border-left: 0; padding-left: 0; }
+.experimentColumn .panelKicker { min-height: 2.1rem; }
+.metricRow { display: flex; justify-content: space-between; gap: 0.8rem; padding-block: 0.62rem; border-top: 1px solid var(--color-border); color: var(--color-muted); font-size: 0.69rem; }
+.metricRow strong { color: var(--color-text); font-family: var(--font-mono); font-size: 0.83rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+.changeMetric { display: flex; flex-direction: column; justify-content: center; background: rgb(118 200 184 / 4%); }
+.changeMetric > span { color: var(--color-muted); font-size: 0.67rem; line-height: 1.5; }
+.changeMetric strong { margin-top: 0.45rem; color: var(--accent-teal); font-family: var(--font-mono); font-size: clamp(1.7rem, 3vw, 2.5rem); font-weight: 500; letter-spacing: -0.06em; }
+.changeMetric p { margin: 0.3rem 0 0; color: var(--color-muted); font-size: 0.69rem; line-height: 1.55; }
+.interpretationNote { max-width: 59rem; margin: -0.8rem 0 0; color: var(--color-muted); font-size: 0.75rem; line-height: 1.7; }
+
+.conclusionGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 5vw, 4rem); }
+.conclusionGrid > div { padding-top: 0.9rem; border-top: 1px solid var(--color-border); }
+.conclusionGrid > div:first-child .panelKicker { color: var(--accent-teal); }
+.conclusionGrid p:last-child { max-width: 36rem; margin: 0.65rem 0 0; color: var(--color-muted); font-size: 0.8rem; line-height: 1.75; }
+.caveatList { display: grid; gap: 0.65rem; max-width: 58rem; margin: 0; padding-left: 1.1rem; color: var(--color-subtle); font-size: 0.7rem; line-height: 1.65; }
+.sourceNote { margin: 0; padding-top: 1rem; border-top: 1px solid var(--color-border); color: var(--color-subtle); font-family: var(--font-mono); font-size: 0.61rem; line-height: 1.65; }
+.actionButton { color: var(--color-text); }
+
+@media (max-width: 800px) {
+  .introCopy { grid-template-columns: 1fr; gap: 1.2rem; }
+  .introCopy .description { max-width: 47rem; }
+  .populationLayout { grid-template-columns: minmax(0, 1fr); }
+  .populationAside { max-width: 40rem; }
+  .experimentMetrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .changeMetric { grid-column: 1 / -1; border-top: 1px solid var(--color-border); border-left: 0; padding-left: 0; }
+}
+
+@media (max-width: 620px) {
+  .page { gap: 4.5rem; }
+  .sectionNav { gap: 0.45rem 1rem; }
+  .profileControls { align-items: flex-start; flex-direction: column; }
+  .controlHint { max-width: 32rem; text-align: left; }
+  .featureChartGrid,
+  .overlapGrid,
+  .conclusionGrid { grid-template-columns: minmax(0, 1fr); }
+  .featureChart figcaption { align-items: flex-start; flex-direction: column; gap: 0.2rem; }
+  .featureUnit { text-align: left; }
+  .experimentMetrics { grid-template-columns: minmax(0, 1fr); }
+  .experimentColumn,
+  .changeMetric,
+  .experimentColumn:first-child { padding: 1rem 0; border-left: 0; border-top: 1px solid var(--color-border); }
+  .experimentColumn:first-child { border-top: 0; }
+  .experimentColumn .panelKicker { min-height: 0; margin-bottom: 0.5rem; }
+  .changeMetric { grid-column: auto; }
+  .overlapCallout { grid-template-columns: 1fr; }
+  .dataTable th,
+  .dataTable td { padding-inline: 0.55rem; }
+  .heroMeta { display: grid; grid-template-columns: 1fr; }
+}
+
+/* The Patterns read as a comparison chapter, with shared axes and clear limits. */
+.page { gap: var(--chapter-space); padding-top: clamp(1.8rem, 3.5vw, 3rem); }
+.pageTitle { max-width: 54rem; font-size: clamp(2.45rem, 5.2vw, 4.45rem); }
+.heroMeta { border-color: var(--color-rule-strong); }
+.chapter { gap: 1.4rem; padding-top: 1.5rem; border-top: 1px solid var(--color-rule-strong); }
+.profileChapter,
+.temperatureChapter { padding: 1.5rem 0 0; border: 0; border-top: 1px solid var(--color-rule-strong); background: transparent; }
+.sectionTitle { font-size: clamp(1.55rem, 3.2vw, 2.55rem); }
+.sectionEyebrow,
+.panelKicker { color: var(--accent-amber); }
+.populationAside { padding-left: 1rem; border-left: 1px solid var(--color-warning); }
+.featureChartGrid { gap: 1.1rem 1.6rem; }
+.featureChart { padding: 0.65rem 0 0; border-top: 1px solid var(--color-rule); background: transparent; }
+.chartPanel { padding: 0.8rem 0 0; border: 0; border-top: 1px solid var(--color-rule); background: transparent; }
+.overlapCallout { border-inline: 0; border-top: 1px solid var(--color-warning); background: transparent; }
+.experimentColumn { border: 0; border-top: 1px solid var(--color-rule); background: transparent; }
+.changeMetric { border-left-color: var(--color-warning); }
+.conclusionGrid > div { border: 0; border-top: 1px solid var(--color-rule); background: transparent; }
+.scienceNote,
+.interpretationNote { border-left-color: var(--color-warning); }
+
+@media (max-width: 720px) {
+  .chapter { padding-top: 1.1rem; }
+  .populationAside { padding-left: 0.8rem; }
+}

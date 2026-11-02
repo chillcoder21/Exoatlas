@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "primary_model": {
+    "model_id": "exoatlas-kmeans-with-temperature-k4",
+    "version": "1.0.0",
+    "status": "frozen_exploratory_primary",
+    "experiment": "with_temp",
+    "k": 4,
+    "ordered_features": [
+      "log10_pl_rade",
+      "log10_pl_orbper",
+      "pl_eqt",
+      "pl_orbeccen"
+    ],
+    "standardized_input_columns": [
+      "scaled_log10_pl_rade",
+      "scaled_log10_pl_orbper",
+      "scaled_pl_eqt",
+      "scaled_pl_orbeccen"
+    ],
+    "feature_definitions": [
+      {
+        "name": "log10_pl_rade",
+        "source_column": "pl_rade",
+        "transformation": "log10",
+        "unit": "Earth radii before log10"
+      },
+      {
+        "name": "log10_pl_orbper",
+        "source_column": "pl_orbper",
+        "transformation": "log10",
+        "unit": "days before log10"
+      },
+      {
+        "name": "pl_eqt",
+        "source_column": "pl_eqt",
+        "transformation": "raw value; standardized by saved StandardScaler",
+        "unit": "K"
+      },
+      {
+        "name": "pl_orbeccen",
+        "source_column": "pl_orbeccen",
+        "transformation": "raw value; standardized by saved StandardScaler; zeros preserved",
+        "unit": "dimensionless"
+      }
+    ],
+    "scaler": {
+      "type": "sklearn.preprocessing.StandardScaler",
+      "path": "artifacts/preprocessing/scaler_with_temp.joblib",
+      "sha256": "4be14920e66dedcad396b72e95d405cf4385689dbebc6a3a44008c064119ec91"
+    },
+    "fitted_model": {
+      "type": "sklearn.cluster.KMeans",
+      "path": "artifacts/clustering/kmeans_with_temp_k4.joblib",
+      "sha256": "6b97ebe7a5d53e22609e333a7cc0b916e32552b26faa371d923d3718f88d7e18"
+    },
+    "assignments": {
+      "path": "data/cluster_experiments/cluster_assignments_with_temp_k4.csv",
+      "sha256": "fba658a9ac87bf53ee5f3ee6de49f7f5eb467f4461f77ac6479217f915e3f9e3"
+    },
+    "cohort_size": 5273,
+    "random_seed": 42,
+    "kmeans_configuration": {
+      "init": "k-means++",
+      "n_init": 20,
+      "max_iter": 300,
+      "tol": 0.0001,
+      "algorithm": "lloyd",
+      "copy_x": true,
+      "verbose": 0,
+      "iterations_observed": 7,
+      "reached_max_iter": false
+    },
+    "dataset": {
+      "source_name": "PSCompPars_2026.10.30_13.47.46.csv",
+      "snapshot_date": "2026-10-30",
+      "source_sha256": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30"
+    },
+    "reports": {
+      "preprocessing": {
+        "path": "data/metadata/preprocessing_report.json",
+        "sha256": "c34a2e010e24c443b735756d91f1a3925c91b0bc34cf655f627e2c256bb898d2"
+      },
+      "clustering": {
+        "path": "data/cluster_experiments/clustering_report.json",
+        "sha256": "80801f7aea6bf35a0b5728d81ed601658ab2e1a757339ffce4ad48f30e1c5ae0"
+      },
+      "validation": {
+        "path": "data/cluster_validation/cluster_validation_report.json",
+        "sha256": "76fdb9bdfb818a96a9d3810aac5fb8a810894c2fc1d44f8ddba90abab973ae5f"
+      }
+    },
+    "evaluation": {
+      "silhouette_euclidean": 0.3412641721072896,
+      "stability_ari_mean_excluding_seed42_self_comparison": 0.9867440419256184,
+      "stability_ari_sample_sd": 0.00708608122465628,
+      "negative_silhouette_count": 119,
+      "negative_silhouette_percent": 2.2567798217333586
+    },
+    "selection_rationale": "The project explicitly approved the existing four-feature K=4 partition as the v1 exploratory application configuration. This is an application-design decision, not objective scientific model selection. It offers four profiles using the approved temperature-inclusive cohort and preserves a direct comparison set. Validation reports a lower silhouette than K=2 and K=3, while K=5 has a slightly higher silhouette; those alternatives remain available.",
+    "interpretation": "An exploratory grouping of confirmed exoplanets, not an established astronomical classification.",
+    "limitations": [
+      "Silhouette and seed stability are geometric diagnostics, not scientific validation by themselves.",
+      "Feature inclusion changes the partition: the with-temperature versus no-temperature K=4 ARI is read from validation outputs.",
+      "Extreme measurements were retained; IQR flags do not establish invalidity, and StandardScaler may be influenced by extremes.",
+      "Discovery-method association reflects a selected catalogue and differing detection sensitivities; it is not causal.",
+      "Validation treats planets as observations and does not model dependence among planets orbiting a shared host star."
+    ]
+  },
+  "comparison_configurations": [
+    {
+      "experiment": "with_temp",
+      "k": 2,
+      "cohort_size": 5273,
+      "silhouette": 0.4586562183072158,
+      "random_seed": 42,
+      "model_artifact": "artifacts/clustering/kmeans_with_temp_k2.joblib",
+      "model_sha256": "19cba1e296c027982df38784f3b7c4f317d5be171f3af51f050c80c8049cf5fd",
+      "assignment_file": "data/cluster_experiments/cluster_assignments_with_temp_k2.csv",
+      "assignment_sha256": "920fa61b85b24bdadacbe6c8adca7fca1fd47cccb8b1584eea95674d29452c82",
+      "feature_columns_passed_to_kmeans": [
+        "scaled_log10_pl_rade",
+        "scaled_log10_pl_orbper",
+        "scaled_pl_eqt",
+        "scaled_pl_orbeccen"
+      ]
+    },
+    {
+      "experiment": "with_temp",
+      "k": 3,
+      "cohort_size": 5273,
+      "silhouette": 0.4227298350317077,
+      "random_seed": 42,
+      "model_artifact": "artifacts/clustering/kmeans_with_temp_k3.joblib",
+      "model_sha256": "bf736811916014a6ed4ad3a7cd414454fada1cf757de5dbc7711d0b12340b933",
+      "assignment_file": "data/cluster_experiments/cluster_assignments_with_temp_k3.csv",
+      "assignment_sha256": "9d9eeb64e65b9c50d94aae77574fa895636ad788ff0105ff874644a8792356ef",
+      "feature_columns_passed_to_kmeans": [
+        "scaled_log10_pl_rade",
+        "scaled_log10_pl_orbper",
+        "scaled_pl_eqt",
+        "scaled_pl_orbeccen"
+      ]
+    },
+    {
+      "experiment": "with_temp",
+      "k": 5,
+      "cohort_size": 5273,
+      "silhouette": 0.35868479651373875,
+      "random_seed": 42,
+      "model_artifact": "artifacts/clustering/kmeans_with_temp_k5.joblib",
+      "model_sha256": "cb7a01742a8aeb8e8e3f4ffc40e6b44ff76525f2fa89617d04d87ebcdc9c0f15",
+      "assignment_file": "data/cluster_experiments/cluster_assignments_with_temp_k5.csv",
+      "assignment_sha256": "e3183121672a17def0ce51a933eb467ede7a9c6bf896dff0df2ee70b662fe371",
+      "feature_columns_passed_to_kmeans": [
+        "scaled_log10_pl_rade",
+        "scaled_log10_pl_orbper",
+        "scaled_pl_eqt",
+        "scaled_pl_orbeccen"
+      ]
+    },
+    {
+      "experiment": "without_temp",
+      "k": 4,
+      "cohort_size": 5273,
+      "silhouette": 0.4903833952548588,
+      "random_seed": 42,
+      "model_artifact": "artifacts/clustering/kmeans_without_temp_k4.joblib",
+      "model_sha256": "5a72133759734e6e64f76b293246cb120202b7a328bf17b69910b1b3b9f8faf7",
+      "assignment_file": "data/cluster_experiments/cluster_assignments_without_temp_k4.csv",
+      "assignment_sha256": "286b1e9478a807087f6370d09fd3bedb316c5db9092e48652a25d0de933a29a2",
+      "feature_columns_passed_to_kmeans": [
+        "scaled_log10_pl_rade",
+        "scaled_log10_pl_orbper",
+        "scaled_pl_orbeccen"
+      ]
+    }
+  ],
+  "source_sha256": "16bb38b253d375b49cdb286b45e38435746c74bfde10d3ba580199fa822b6c30"
+}
