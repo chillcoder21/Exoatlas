@@ -48,6 +48,10 @@ ExoAtlas/
 
 ## Python API
 
+## Deployment
+
+The included `Dockerfile` builds the React client and runs it with the Flask API on one public service. Deploy it from the repository root using a Docker-compatible web-service host. The service exposes `/api/health` for its health check and serves the browser application for all non-API routes.
+
 From the repository root, create and activate the virtual environment, then install the backend dependencies:
 
 ```powershell

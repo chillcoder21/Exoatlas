@@ -11,7 +11,7 @@ from typing import Any
 import joblib
 import numpy as np
 import pandas as pd
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -348,7 +348,8 @@ def _load_similarity_index(root: Path, planets: pd.DataFrame) -> dict[str, Any]:
 
 def create_app(project_root: Path | None = None) -> Flask:
     """Create the app and load all prepared data a single time."""
-    app = Flask(__name__)
+    frontend_dist = PROJECT_ROOT / "frontend" / "dist"
+    app = Flask(__name__, static_folder=None)
     data = _load_data(Path(project_root) if project_root else PROJECT_ROOT)
     app.extensions["exoatlas_data"] = data
 
@@ -1087,6 +1088,19 @@ def create_app(project_root: Path | None = None) -> Flask:
             },
             "scientific_caveats": validation["limitations"],
         })
+
+    @app.get("/", defaults={"path": ""})
+    @app.get("/<path:path>")
+    def frontend(path: str):
+        """Serve the built single-page app while preserving JSON API failures."""
+        if path.startswith("api/"):
+            return jsonify({"error": {"code": "not_found", "message": "Endpoint or resource was not found."}}), 404
+        if not frontend_dist.is_dir():
+            return jsonify({"error": {"code": "frontend_not_built", "message": "Build the frontend before serving it from Flask."}}), 503
+        asset = frontend_dist / path
+        if path and asset.is_file():
+            return send_from_directory(frontend_dist, path)
+        return send_from_directory(frontend_dist, "index.html")
 
     return app
 
